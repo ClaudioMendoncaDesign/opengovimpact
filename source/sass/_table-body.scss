@@ -1,0 +1,21 @@
+.inter-header {
+  
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  
+  td { 
+    padding: 10px; 
+    background-color: rgba($blue, .3);
+  }
+}
+
+.regular-item {
+  text-align: center;
+
+  td:nth-child(1),
+  td:nth-child(2),
+  td:nth-child(3) {
+    text-align: left;
+  }
+}

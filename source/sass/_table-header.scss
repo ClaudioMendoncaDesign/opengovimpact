@@ -1,0 +1,31 @@
+.table-header {
+  td, th {
+    text-align: left;
+    width: 4%;
+    padding: 5px;
+
+    &:first-child {
+      width: 20%;
+    }
+  }
+
+  th {
+    padding: 15px;
+    font-weight: 100;
+  }
+
+  &__top {
+    background-color: rgba($black, .1);
+    th { 
+      vertical-align: top;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__bottom {
+    background-color: white;
+    th { vertical-align: bottom; }
+  }
+}
