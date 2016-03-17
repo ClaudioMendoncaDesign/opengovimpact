@@ -1,19 +1,24 @@
-.vertical-text {
-  display: inline-block;
-  overflow: hidden;
-  width: 1.5em;
-
-  &__inner {
-    display: inline-block;
+.table-header-rotated {
+  border-collapse: collapse;
+  td {
+    padding: 5px;
+  }
+  td.rotate {
+    overflow: visible;
+    height: 200px;
     white-space: nowrap;
-    line-height: 1.5;
-    transform: translate(0,100%) rotate(-90deg);
-    transform-origin: 0 0;
+    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate 
+    > div {
+      transform: 
+        // Magic Numbers
+        translate(0px, 0px)
+        // 45 is really 360-45
+        rotate(315deg);
+      width: 30px;
+    }
+    > div > span {
+      padding: 5px 10px;
+    }
   }
 
-  &__inner:after {
-    content: "";
-    display: block;
-    margin: -1.5em 0 100%;
-  }
 }

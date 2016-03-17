@@ -1,3 +1,16 @@
+$black: rgba(0,0,0,1);
+$blue: rgba(42, 120, 150,1);
+
+body {
+  font-size: 11px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+
 @import 'utils';
 @import 'table-base';
 @import 'vertical-header';

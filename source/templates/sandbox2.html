@@ -1,0 +1,44 @@
+{% extends '_base.html' %}
+{% block main %}
+
+{% macro yes() %}
+<a href="{{d.url}}" class="yes"><i class="material-icons">check</i></a>
+{% endmacro %}
+  <ul class="list-results">
+  {% for d in data %}
+    {% if d.intervention %}
+    <li class="list-item">
+      <h1 class="intervention">{{d.intervention}}</h1>
+      <h2 class="organization">{{d.organization}}</h2>
+      <h3 class="methodology">{{d.methodology}}</h3>
+      <h3 class="region">{{d.country}}</h3>
+      <p><a href="{{d.url}}" class="yes"><i class="material-icons">link</i></a></p>
+      {% if d.transparency.increased_knowledge %} <p class="outcomes"><span class="category">Transparency</span> Increased knowledge of rights</p>{% endif %}
+      {% if d.transparency.transparency %} <p class="outcomes"><span class="category">Transparency</span> Transparency</p>{% endif %}
+      {% if d.transparency.budget %} <p class="outcomes"><span class="category">Transparency</span> Budget transparency</p>{% endif %}
+
+      {% if d.citizen_engagement.voter_turnout %} <p class="outcomes"><span class="category">Citizen Engagement and Participation</span> Voter turnout</p>{% endif %}
+      {% if d.citizen_engagement.evidence_based %} <p class="outcomes"><span class="category">Citizen Engagement and Participation</span> Evidence-based electoral decisionmaking</p>{% endif %}
+      {% if d.citizen_engagement.enhanced_engagement %} <p class="outcomes"><span class="category">Citizen Engagement and Participation</span> Enhanced engagement other than voting</p>{% endif %}
+      
+      {% if d.responsiveness.answerability %} <p class="outcomes"><span class="category">Responsiveness</span> Answerability</p>{% endif %}
+      {% if d.responsiveness.inclusive_decisionmaking %} <p class="outcomes"><span class="category">Responsiveness</span> More inclusive decision-making</p>{% endif %}
+
+      {% if d.accountability.hiring_firing %} <p class="outcomes"><span class="category">Accountability</span> Hiring and firing</p>{% endif %}
+      {% if d.accountability.service_delivery %} <p class="outcomes"><span class="category">Accountability</span> Equitable service delivery</p>{% endif %}
+      {% if d.accountability.improved_services %} <p class="outcomes"><span class="category">Accountability</span> Improved Public Services</p>{% endif %}
+      {% if d.accountability.reduced_corruption %} <p class="outcomes"><span class="category">Accountability</span> Reduced corruption</p>{% endif %}
+      {% if d.accountability.other %} <p class="outcomes"><span class="category">Accountability</span> Other local gov't and service provider accountability</p>{% endif %}
+      
+      {% if d.social_economic_change.improved_health %} <p class="outcomes"><span class="category">Social, Economic, Environmental change</span> Improved Health Outcomes</p>{% endif %}
+      {% if d.social_economic_change.compliance %} <p class="outcomes"><span class="category">Social, Economic, Environmental change</span> Regulatory compliance</p>{% endif %}
+      {% if d.social_economic_change.trust_gov %} <p class="outcomes"><span class="category">Social, Economic, Environmental change</span> Trust in government</p>{% endif %}
+      {% if d.social_economic_change.increased_efficiency %} <p class="outcomes"><span class="category">Social, Economic, Environmental change</span> Increased efficiency of government</p>{% endif %}
+    </li>
+    {% endif %}
+  
+  {% endfor %}
+  </ul>
+  
+
+{% endblock %}

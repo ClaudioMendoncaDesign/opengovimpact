@@ -1,31 +1,31 @@
 .table-header {
-  td, th {
-    text-align: left;
-    width: 4%;
-    padding: 5px;
-
-    &:first-child {
-      width: 20%;
-    }
-  }
+  box-shadow: 0 3px 5px rgba($black, .1);
 
   th {
     padding: 15px;
     font-weight: 100;
   }
 
-  &__top {
+  &__bottom {
+    background-color: white;
+    th { vertical-align: bottom; }
+  }
+}
+
+.table-categories {
     background-color: rgba($black, .1);
-    th { 
+    
+    td { 
       vertical-align: top;
       text-align: center;
       font-weight: bold;
       text-transform: uppercase;
     }
-  }
+    
+    td { width: 3%; }
 
-  &__bottom {
-    background-color: white;
-    th { vertical-align: bottom; }
-  }
+    .col-1 { width: 20%; }
+    .col-2 { width:  7%; }
+    .col-3 { width:  9%; }
+    .col-4 { width:  5%; }
 }

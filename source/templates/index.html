@@ -2,7 +2,7 @@
 {% block main %}
 
 {% macro yes() %}
-<a href="#" class="yes"><i class="material-icons">check</i></a>
+<a href="{{d.url}}" target="_blank" class="yes"><i class="material-icons">check</i></a>
 {% endmacro %}
 
 <table class="table">
@@ -14,147 +14,82 @@
       <th colspan="2">Responsiveness</th>
       <th colspan="5">Accountability</th>
       <th colspan="4">Social, Economic, Environmental change</th>
-      <th rowspan="2">Countries</th>
     </tr>
     <tr class="table-header__bottom">
       <th><div class="vertical-text"><div class="vertical-text__inner">Type of Intervention tested</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Organization</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Primary Methodology</div></div></th>
+      
       <th><div class="vertical-text"><div class="vertical-text__inner">Increased knowledge of rights</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Transparency</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Budget transparency</div></div></th>
+      
       <th><div class="vertical-text"><div class="vertical-text__inner">Voter turnout</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Evidence-based electoral decisionmaking</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Enhanced engagement other than voting</div></div></th>
+      
       <th><div class="vertical-text"><div class="vertical-text__inner">Answerability</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">More inclusive decision-making</div></div></th>
+      
       <th><div class="vertical-text"><div class="vertical-text__inner">Hiring and firing</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Equitable service delivery</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Improved Public Services</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Reduced corruption</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Other local gov't and service provider accountability</div></div></th>
+
       <th><div class="vertical-text"><div class="vertical-text__inner">Improved Health Outcomes</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Regulatory compliance</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Trust in government</div></div></th>
       <th><div class="vertical-text"><div class="vertical-text__inner">Increased efficiency of government</div></div></th>
+
+      <th><div class="vertical-text"><div class="vertical-text__inner">Countries</div></div></th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="table-body">
+  {% for d in data %}
+  
+    {% if d.intertitle %}
     <tr class="inter-header">
-      <td colspan="21">Transparency Interventions: Community-based information provision</td>
+      <td colspan="20">{{d.intertitle}}</td>
     </tr>
-    <tr class="regular-item">
-      <td>"Meet the candidate" sessions</td>
-      <td>EGAP Metaketa</td>
-      <td>RCT</td>
-      <td></td><td></td><td></td>
-      <td>{{ yes() }}</td><td>{{ yes() }}</td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td>
-      <td>Uganda</td>
+
+    {% else %}
+    <tr class="regular-item {{d.category}}">
+      <td>{{d.intervention}}</td>
+      <td>{{d.organization}}</td>
+      <td>{{d.methodology}}</td>
+      
+      <td class="transparency">{% if d.transparency.increased_knowledge %} {{yes()}} {% endif %}</td>
+      <td class="transparency">{% if d.transparency.transparency %} {{yes()}} {% endif %}</td>
+      <td class="transparency">{% if d.transparency.budget %} {{yes()}} {% endif %}</td>
+
+      <td class="citizen-engagement">{% if d.citizen_engagement.voter_turnout %} {{yes()}} {% endif %}</td>
+      <td class="citizen-engagement">{% if d.citizen_engagement.evidence_based %} {{yes()}} {% endif %}</td>
+      <td class="citizen-engagement">{% if d.citizen_engagement.enhanced_engagement %} {{yes()}} {% endif %}</td>
+      
+      <td class="responsiveness">{% if d.responsiveness.answerability %} {{yes()}} {% endif %}</td>
+      <td class="responsiveness">{% if d.responsiveness.inclusive_decisionmaking %} {{yes()}} {% endif %}</td>
+
+      <td class="accountability">{% if d.accountability.hiring_firing %} {{yes()}} {% endif %}</td>
+      <td class="accountability">{% if d.accountability.service_delivery %} {{yes()}} {% endif %}</td>
+      <td class="accountability">{% if d.accountability.improved_services %} {{yes()}} {% endif %}</td>
+      <td class="accountability">{% if d.accountability.reduced_corruption %} {{yes()}} {% endif %}</td>
+      <td class="accountability">{% if d.accountability.other %} {{yes()}} {% endif %}</td>
+      
+      <td class="social-economic-change">{% if d.social_economic_change.improved_health %} {{yes()}} {% endif %}</td>
+      <td class="social-economic-change">{% if d.social_economic_change.compliance %} {{yes()}} {% endif %}</td>
+      <td class="social-economic-change">{% if d.social_economic_change.trust_gov %} {{yes()}} {% endif %}</td>
+      <td class="social-economic-change">{% if d.social_economic_change.increased_efficiency %} {{yes()}} {% endif %}</td>
+
+      <td>{{d.country}}</td>
     </tr>
-    <tr class="regular-item">
-      <td>Disclosure of legislator performance</td>
-      <td>EGAP Metaketa</td>
-      <td>RCT</td>
-      <td></td><td></td><td></td>
-      <td></td><td>{{ yes() }}</td><td></td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td>
-      <td>Benin</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Report card of politician performance</td>
-      <td>J-PAL</td>
-      <td>RCT</td>
-      <td>{{ yes() }}</td><td></td><td></td>
-      <td>{{ yes() }}</td><td>{{ yes() }}</td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td></td>
-      <td></td><td>{{ yes() }}</td><td></td>
-      <td></td><td></td><td></td>
-      <td>India</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Information on resource allocations</td>
-      <td>IPA</td>
-      <td>RCT</td>
-      <td>{{ yes() }}</td><td></td><td></td>
-      <td></td><td>{{ yes() }}</td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td>
-      <td>India</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Information on resource allocations</td>
-      <td>Global Integrity</td>
-      <td>Participatory assessment, policy mapping</td>
-      <td></td><td></td><td></td><td></td><td></td>
-      <td>{{ yes() }}</td>
-      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-      <td>Mexico</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Information on resource allocations</td>
-      <td>EGAP</td>
-      <td>RCT</td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td>{{ yes() }}</td><td></td><td>{{ yes() }}</td>
-      <td>{{ yes() }}</td><td></td><td></td>
-      <td></td><td></td>
-      <td>India</td>
-    </tr>
-    <tr class="inter-header">
-      <td colspan="21">Transparency Interventions: ICT-based information provision</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Open budget portal</td>
-      <td>ODImpact</td>
-      <td>Case studies</td>
-      <td></td><td>{{ yes() }}</td><td></td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td></td>
-      <td></td><td></td>
-      <td>Brazil</td>
-    </tr>
-    <tr class="regular-item">
-      <td>Facebook posts about parliamentary performance</td>
-      <td>MIT/mySociety</td>
-      <td>RCT</td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td>{{ yes() }}</td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td><td></td>
-      <td></td><td></td>
-      <td>Kenya</td>
-    </tr>
+    {% endif %}
+  
+  {% endfor %}
   </tbody>
+  <tfoot class="table-footer">
+    
+  </tfoot>
 </table>
 
 {% endblock %}
-
-<!-- 
-<tr class="regular-item">
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td><td></td><td></td>
-  <td></td><td></td><td></td>
-  <td></td><td></td><td></td>
-  <td></td><td></td><td></td>
-  <td></td><td></td><td></td>
-  <td></td><td></td>
-  <td></td>
-</tr> -->
-
