@@ -1,5 +1,18 @@
+// ====================================================
+// Declaring Variables for the colors in the table
+// ====================================================
+
 $black: rgba(0,0,0,1);
-$blue: rgba(42, 120, 150,1);
+$main-color: rgba(42, 120, 150,1);
+$transparency-color: rgba(255, 0, 0, 1);
+$citizen-engagement-color: rgba(0, 255, 0, 1);
+$responsiveness-color: rgba(0, 0, 255, 1);
+$social-change-color: rgba(255, 255, 0, 1);
+
+
+// ====================================================
+// Setting some base styles for body and table elements
+// ====================================================
 
 body {
   font-size: 11px;
@@ -10,11 +23,126 @@ body {
   padding: 0;
 }
 
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
 
-@import 'utils';
-@import 'table-base';
-@import 'vertical-header';
-@import 'table-header';
-@import 'table-body';
-@import 'table-footer';
-@import 'sandbox';
+td, th { 
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.links { text-align: center; }
+.links a { color: $main-color; }
+
+// ====================================================
+// Sets the zebra apttern for the rows
+// ====================================================
+
+tr:nth-child(2n) { background-color: rgba($black, .05); }
+// td:nth-child(2n):not(:last-child) { background-color: rgba($black, .05); }
+
+.inactive-cell { 
+  background-color: rgba(white, .5); 
+  width: 9%;
+}
+
+.col-1 { width: 20%; }
+.col-2 { width:  7%; }
+.col-3 { width:  9%; }
+.col-4 { width:  5%; } 
+
+.table-categories th { font-weight: 100; }
+.table-body thead th { padding: 0; }
+
+
+.table-body__width-setter td {
+  height: 0;
+  padding: 0;
+}
+
+.table-scroll {
+  height: 70vh;
+  overflow: scroll;
+}
+
+.inter-header {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  
+  td { 
+    padding: 10px; 
+    background-color: rgba($main-color, .3);
+  }
+}
+
+.table-header {
+  box-shadow: 0 3px 5px rgba($black, .1);
+
+  td {
+    padding: 15px;
+    font-weight: 100;
+  }
+
+  &__bottom {
+    background-color: white;
+    td { vertical-align: bottom; }
+  }
+}
+
+.table-header__bottom.table-header__bottom {
+  vertical-align: bottom;
+
+  td {
+    background-color: #FFF;
+    font-weight: bold;
+  }
+}
+
+// Color Coding
+
+.cat-transparency {
+  background-color: rgba(blue, .1);
+}
+.cat-citizen-engagement {
+  background-color: rgba(green, .1);
+}
+.cat-responsiveness {
+  background-color: rgba(yellow, .1);
+}
+.cat-accountability {
+  background-color: rgba(orange, .1);
+}
+.cat-social-economic-change {
+  background-color: rgba(purple, .1);
+}
+
+
+// Inspired in CSS Tricks - https://css-tricks.com/rotated-table-column-headers/
+
+.table-header-rotated {
+  .rotate {
+    overflow: visible;
+    height: 200px;
+    white-space: nowrap;
+    // Firefox needs the extra DIV for some reason, otherwise the text disappears if you rotate 
+    > div {
+      transform: 
+        // Magic Numbers
+        translate(0px, 0px)
+        // 45 is really 360-45
+        rotate(315deg);
+      width: 30px;
+    }
+    > div > span {
+      padding: 5px 10px;
+    }
+  }
+}
+
