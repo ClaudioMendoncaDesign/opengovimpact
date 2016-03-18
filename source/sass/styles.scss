@@ -2,12 +2,13 @@
 // Declaring Variables for the colors in the table
 // ====================================================
 
-$black: rgba(0,0,0,1);
-$main-color: rgba(42, 120, 150,1);
-$transparency-color: rgba(255, 0, 0, 1);
-$citizen-engagement-color: rgba(0, 255, 0, 1);
-$responsiveness-color: rgba(0, 0, 255, 1);
-$social-change-color: rgba(255, 255, 0, 1);
+$black: rgba(0,0,0,.7);
+$main-color: rgba(0, 175, 240,1);
+$transparency-color: rgba(200, 100, 0, 1);
+$citizen-engagement-color: rgba(0, 200, 100, 1);
+$responsiveness-color: rgba( 100, 0, 200, 1);
+$accountability-color: rgba(0, 50, 150, 1);
+$social-change-color: rgba(150, 150, 0, 1);
 
 
 // ====================================================
@@ -21,6 +22,8 @@ body {
   font-weight: 100;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  overflow: hidden;
 }
 
 table {
@@ -37,39 +40,59 @@ td, th {
   text-overflow: ellipsis;
 }
 
-.links { text-align: center; }
-.links a { color: $main-color; }
-
-// ====================================================
-// Sets the zebra apttern for the rows
-// ====================================================
-
-tr:nth-child(2n) { background-color: rgba($black, .05); }
-// td:nth-child(2n):not(:last-child) { background-color: rgba($black, .05); }
-
-.inactive-cell { 
-  background-color: rgba(white, .5); 
-  width: 9%;
+th { 
+  text-align: left; 
+  font-weight: 100;
 }
 
-.col-1 { width: 20%; }
-.col-2 { width:  7%; }
-.col-3 { width:  9%; }
-.col-4 { width:  5%; } 
+.links { text-align: center; }
+.links a { color: $black; }
 
-.table-categories th { font-weight: 100; }
-.table-body thead th { padding: 0; }
 
+// ====================================================
+// Creates the scrollable section of the table
+// ====================================================
+
+.table-scroll {
+  height: 70vh;
+  overflow: scroll;
+}
+
+
+// ====================================================
+// Hides this helper row. This row is used to set the custom width for the columns
+// ====================================================
 
 .table-body__width-setter td {
   height: 0;
   padding: 0;
 }
 
-.table-scroll {
-  height: 70vh;
-  overflow: scroll;
+
+// ====================================================
+// Sets the zebra apttern for the rows
+// ====================================================
+
+tr:nth-child(2n) { background-color: rgba($black, .05); }
+
+// ====================================================
+// Setting the width and bg-color of the columns
+// ====================================================
+
+.col-1 { width: 20%; }
+.col-2 { width:  7%; }
+.col-3 { width:  9%; }
+.col-4 { width:  5%; }
+
+.inactive-cell { 
+  background-color: rgba(white, .5); 
+  width: 6%;
 }
+
+
+// ====================================================
+// Sets the styles for the dividers in the scrollable section
+// ====================================================
 
 .inter-header {
   font-weight: bold;
@@ -77,52 +100,43 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
   text-transform: uppercase;
   
   td { 
-    padding: 10px; 
-    background-color: rgba($main-color, .3);
+    padding: 12px 0 10px; 
+    background-color: $main-color;
+    color: white;
+    letter-spacing: .5px;
   }
 }
+
+
+// ====================================================
+// Sets the styles for the header
+// ====================================================
 
 .table-header {
-  box-shadow: 0 3px 5px rgba($black, .1);
+  box-shadow: 0 3px 5px rgba($black, .2);
 
-  td {
-    padding: 15px;
-    font-weight: 100;
-  }
+  td { padding: 10px; }
 
-  &__bottom {
-    background-color: white;
-    td { vertical-align: bottom; }
-  }
+  &__bottom td { vertical-align: bottom; }
 }
 
-.table-header__bottom.table-header__bottom {
-  vertical-align: bottom;
-
-  td {
-    background-color: #FFF;
+.table-categories {
+  th {
     font-weight: bold;
+    color: white;
+    background-color: $black;
+    text-align: center;
+  }
+
+  th:first-child {
+    text-align: left;
   }
 }
 
-// Color Coding
 
-.cat-transparency {
-  background-color: rgba(blue, .1);
-}
-.cat-citizen-engagement {
-  background-color: rgba(green, .1);
-}
-.cat-responsiveness {
-  background-color: rgba(yellow, .1);
-}
-.cat-accountability {
-  background-color: rgba(orange, .1);
-}
-.cat-social-economic-change {
-  background-color: rgba(purple, .1);
-}
-
+// ====================================================
+// Sets the styles for the inclined labels
+// ====================================================
 
 // Inspired in CSS Tricks - https://css-tricks.com/rotated-table-column-headers/
 
@@ -135,14 +149,62 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
     > div {
       transform: 
         // Magic Numbers
-        translate(0px, 0px)
+        translate(18px, 5px)
         // 45 is really 360-45
         rotate(315deg);
       width: 30px;
     }
     > div > span {
-      padding: 5px 10px;
+      padding: 8px 9px 8px 0;
+      width: 350px;
+      display: inline-block;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        position: absolute;
+        border-width: 0 31px 31px 31px;
+        top: 0px;
+        left: -62px;
+      }
     }
   }
 }
 
+
+// ====================================================
+// Color Coding
+// ====================================================
+
+.cat-transparency                           { background-color:   rgba($transparency-color, .1); }
+.cat-transparency:nth-of-type(2n)           { background-color:   rgba($transparency-color, .2); }
+.cat-transparency:before                    { border-right-color: rgba($transparency-color, .1) !important; }
+
+.cat-citizen-engagement                     { background-color:   rgba($citizen-engagement-color, .1); }
+.cat-citizen-engagement:nth-of-type(2n)     { background-color:   rgba($citizen-engagement-color, .2); }
+.cat-citizen-engagement:before              { border-right-color: rgba($citizen-engagement-color, .1) !important; }
+
+.cat-responsiveness                         { background-color:   rgba($responsiveness-color, .1); }
+.cat-responsiveness:nth-of-type(2n)         { background-color:   rgba($responsiveness-color, .2); }
+.cat-responsiveness:before                  { border-right-color: rgba($responsiveness-color, .1) !important; }
+
+.cat-accountability                         { background-color:   rgba($accountability-color, .1); }
+.cat-accountability:nth-of-type(2n)         { background-color:   rgba($accountability-color, .2); }
+.cat-accountability:before                  { border-right-color: rgba($accountability-color, .1) !important; }
+
+.cat-social-economic-change                 { background-color:   rgba($social-change-color, .1); }
+.cat-social-economic-change:nth-of-type(2n) { background-color:   rgba($social-change-color, .2); }
+.cat-social-economic-change:before          { border-right-color: rgba($social-change-color, .1) !important; }
+
+
+.table-categories {
+  .cat-transparency            { background-color: $transparency-color; }
+  .cat-citizen-engagement      { background-color: $citizen-engagement-color; }
+  .cat-responsiveness          { background-color: $responsiveness-color; }
+  .cat-accountability          { background-color: $accountability-color; }
+  .cat-social-economic-change  { background-color: $social-change-color; }
+}

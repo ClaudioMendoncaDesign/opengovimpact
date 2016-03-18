@@ -4,7 +4,9 @@ body {
   font-family: sans-serif;
   font-weight: 100;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 100vw;
+  overflow: hidden; }
 
 table {
   border-collapse: collapse;
@@ -18,18 +20,26 @@ td, th {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+th {
+  text-align: left;
+  font-weight: 100; }
+
 .links {
   text-align: center; }
 
 .links a {
-  color: #2a7896; }
+  color: rgba(0, 0, 0, 0.7); }
+
+.table-scroll {
+  height: 70vh;
+  overflow: scroll; }
+
+.table-body__width-setter td {
+  height: 0;
+  padding: 0; }
 
 tr:nth-child(2n) {
   background-color: rgba(0, 0, 0, 0.05); }
-
-.inactive-cell {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 9%; }
 
 .col-1 {
   width: 20%; }
@@ -43,65 +53,115 @@ tr:nth-child(2n) {
 .col-4 {
   width: 5%; }
 
-.table-categories th {
-  font-weight: 100; }
-
-.table-body thead th {
-  padding: 0; }
-
-.table-body__width-setter td {
-  height: 0;
-  padding: 0; }
-
-.table-scroll {
-  height: 70vh;
-  overflow: scroll; }
+.inactive-cell {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 6%; }
 
 .inter-header {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
   .inter-header td {
-    padding: 10px;
-    background-color: rgba(42, 120, 150, 0.3); }
+    padding: 12px 0 10px;
+    background-color: #00aff0;
+    color: white;
+    letter-spacing: .5px; }
 
 .table-header {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
   .table-header td {
-    padding: 15px;
-    font-weight: 100; }
-  .table-header__bottom {
-    background-color: white; }
-    .table-header__bottom td {
-      vertical-align: bottom; }
+    padding: 10px; }
+  .table-header__bottom td {
+    vertical-align: bottom; }
 
-.table-header__bottom.table-header__bottom {
-  vertical-align: bottom; }
-  .table-header__bottom.table-header__bottom td {
-    background-color: #FFF;
-    font-weight: bold; }
+.table-categories th {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center; }
 
-.cat-transparency {
-  background-color: rgba(0, 0, 255, 0.1); }
-
-.cat-citizen-engagement {
-  background-color: rgba(0, 128, 0, 0.1); }
-
-.cat-responsiveness {
-  background-color: rgba(255, 255, 0, 0.1); }
-
-.cat-accountability {
-  background-color: rgba(255, 165, 0, 0.1); }
-
-.cat-social-economic-change {
-  background-color: rgba(128, 0, 128, 0.1); }
+.table-categories th:first-child {
+  text-align: left; }
 
 .table-header-rotated .rotate {
   overflow: visible;
   height: 200px;
   white-space: nowrap; }
   .table-header-rotated .rotate > div {
-    transform: translate(0px, 0px) rotate(315deg);
+    transform: translate(18px, 5px) rotate(315deg);
     width: 30px; }
   .table-header-rotated .rotate > div > span {
-    padding: 5px 10px; }
+    padding: 8px 9px 8px 0;
+    width: 350px;
+    display: inline-block;
+    position: relative; }
+    .table-header-rotated .rotate > div > span:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      position: absolute;
+      border-width: 0 31px 31px 31px;
+      top: 0px;
+      left: -62px; }
+
+.cat-transparency {
+  background-color: rgba(200, 100, 0, 0.1); }
+
+.cat-transparency:nth-of-type(2n) {
+  background-color: rgba(200, 100, 0, 0.2); }
+
+.cat-transparency:before {
+  border-right-color: rgba(200, 100, 0, 0.1) !important; }
+
+.cat-citizen-engagement {
+  background-color: rgba(0, 200, 100, 0.1); }
+
+.cat-citizen-engagement:nth-of-type(2n) {
+  background-color: rgba(0, 200, 100, 0.2); }
+
+.cat-citizen-engagement:before {
+  border-right-color: rgba(0, 200, 100, 0.1) !important; }
+
+.cat-responsiveness {
+  background-color: rgba(100, 0, 200, 0.1); }
+
+.cat-responsiveness:nth-of-type(2n) {
+  background-color: rgba(100, 0, 200, 0.2); }
+
+.cat-responsiveness:before {
+  border-right-color: rgba(100, 0, 200, 0.1) !important; }
+
+.cat-accountability {
+  background-color: rgba(0, 50, 150, 0.1); }
+
+.cat-accountability:nth-of-type(2n) {
+  background-color: rgba(0, 50, 150, 0.2); }
+
+.cat-accountability:before {
+  border-right-color: rgba(0, 50, 150, 0.1) !important; }
+
+.cat-social-economic-change {
+  background-color: rgba(150, 150, 0, 0.1); }
+
+.cat-social-economic-change:nth-of-type(2n) {
+  background-color: rgba(150, 150, 0, 0.2); }
+
+.cat-social-economic-change:before {
+  border-right-color: rgba(150, 150, 0, 0.1) !important; }
+
+.table-categories .cat-transparency {
+  background-color: #c86400; }
+
+.table-categories .cat-citizen-engagement {
+  background-color: #00c864; }
+
+.table-categories .cat-responsiveness {
+  background-color: #6400c8; }
+
+.table-categories .cat-accountability {
+  background-color: #003296; }
+
+.table-categories .cat-social-economic-change {
+  background-color: #969600; }
