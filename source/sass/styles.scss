@@ -45,7 +45,10 @@ th {
   font-weight: 100;
 }
 
-.links { text-align: center; }
+.links { 
+  text-align: center; 
+  width: 45px !important;
+}
 .links a { color: $black; }
 
 
@@ -180,25 +183,25 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 // Color Coding
 // ====================================================
 
-.cat-transparency                           { background-color:   rgba($transparency-color, .1); }
-.cat-transparency:nth-of-type(2n)           { background-color:   rgba($transparency-color, .2); }
-.cat-transparency:before                    { border-right-color: rgba($transparency-color, .1) !important; }
+.links.cat-transparency                           { background-color:   rgba($transparency-color, .1); }
+.links.cat-transparency:nth-of-type(2n)           { background-color:   rgba($transparency-color, .15); }
+.cat-transparency:before                          { border-right-color: rgba($transparency-color, .1) !important; }
 
-.cat-citizen-engagement                     { background-color:   rgba($citizen-engagement-color, .1); }
-.cat-citizen-engagement:nth-of-type(2n)     { background-color:   rgba($citizen-engagement-color, .2); }
-.cat-citizen-engagement:before              { border-right-color: rgba($citizen-engagement-color, .1) !important; }
+.links.cat-citizen-engagement                     { background-color:   rgba($citizen-engagement-color, .1); }
+.links.cat-citizen-engagement:nth-of-type(2n)     { background-color:   rgba($citizen-engagement-color, .15); }
+.cat-citizen-engagement:before                    { border-right-color: rgba($citizen-engagement-color, .1) !important; }
 
-.cat-responsiveness                         { background-color:   rgba($responsiveness-color, .1); }
-.cat-responsiveness:nth-of-type(2n)         { background-color:   rgba($responsiveness-color, .2); }
-.cat-responsiveness:before                  { border-right-color: rgba($responsiveness-color, .1) !important; }
+.links.cat-responsiveness                         { background-color:   rgba($responsiveness-color, .1); }
+.links.cat-responsiveness:nth-of-type(2n)         { background-color:   rgba($responsiveness-color, .15); }
+.cat-responsiveness:before                        { border-right-color: rgba($responsiveness-color, .1) !important; }
 
-.cat-accountability                         { background-color:   rgba($accountability-color, .1); }
-.cat-accountability:nth-of-type(2n)         { background-color:   rgba($accountability-color, .2); }
-.cat-accountability:before                  { border-right-color: rgba($accountability-color, .1) !important; }
+.links.cat-accountability                         { background-color:   rgba($accountability-color, .1); }
+.links.cat-accountability:nth-of-type(2n)         { background-color:   rgba($accountability-color, .15); }
+.cat-accountability:before                        { border-right-color: rgba($accountability-color, .1) !important; }
 
-.cat-social-economic-change                 { background-color:   rgba($social-change-color, .1); }
-.cat-social-economic-change:nth-of-type(2n) { background-color:   rgba($social-change-color, .2); }
-.cat-social-economic-change:before          { border-right-color: rgba($social-change-color, .1) !important; }
+.links.cat-social-economic-change                 { background-color:   rgba($social-change-color, .1); }
+.links.cat-social-economic-change:nth-of-type(2n) { background-color:   rgba($social-change-color, .15); }
+.cat-social-economic-change:before                { border-right-color: rgba($social-change-color, .1) !important; }
 
 
 .table-categories {
@@ -207,4 +210,35 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
   .cat-responsiveness          { background-color: $responsiveness-color; }
   .cat-accountability          { background-color: $accountability-color; }
   .cat-social-economic-change  { background-color: $social-change-color; }
+}
+
+.table-header-rotated {
+  .cat-transparency > div > span                                  { background-color:   rgba($transparency-color, .1); }
+  .cat-transparency:nth-of-type(2n) > div > span                  { background-color:   rgba($transparency-color, .15); }
+  .cat-transparency:nth-of-type(2n) > div > span:before           { border-right-color: rgba($transparency-color, .15); }
+  .cat-transparency > div > span:before                           { border-right-color: rgba($transparency-color, .1); }
+  
+  
+  .cat-citizen-engagement > div > span                            { background-color:   rgba($citizen-engagement-color, .1); }
+  .cat-citizen-engagement:nth-of-type(2n) > div > span            { background-color:   rgba($citizen-engagement-color, .15); }
+  .cat-citizen-engagement:nth-of-type(2n) > div > span:before     { border-right-color: rgba($citizen-engagement-color, .15); }
+  .cat-citizen-engagement > div > span:before                     { border-right-color: rgba($citizen-engagement-color, .1); }
+  
+  
+  .cat-responsiveness > div > span                                { background-color:   rgba($responsiveness-color, .1); }
+  .cat-responsiveness:nth-of-type(2n) > div > span                { background-color:   rgba($responsiveness-color, .15); }
+  .cat-responsiveness:nth-of-type(2n) > div > span:before         { border-right-color: rgba($responsiveness-color, .15); }
+  .cat-responsiveness > div > span:before                         { border-right-color: rgba($responsiveness-color, .1); }
+  
+  
+  .cat-accountability > div > span                                { background-color:   rgba($accountability-color, .1); }
+  .cat-accountability:nth-of-type(2n) > div > span                { background-color:   rgba($accountability-color, .15); }
+  .cat-accountability:nth-of-type(2n) > div > span:before         { border-right-color: rgba($accountability-color, .15); }
+  .cat-accountability > div > span:before                         { border-right-color: rgba($accountability-color, .1); }
+  
+  
+  .cat-social-economic-change > div > span                        { background-color:   rgba($social-change-color, .1); }
+  .cat-social-economic-change:nth-of-type(2n) > div > span        { background-color:   rgba($social-change-color, .15); }
+  .cat-social-economic-change:nth-of-type(2n) > div > span:before { border-right-color: rgba($social-change-color, .15); }
+  .cat-social-economic-change > div > span:before                 { border-right-color: rgba($social-change-color, .1); }
 }
