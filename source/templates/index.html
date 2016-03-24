@@ -5,6 +5,12 @@
 <a href="{{d.url}}" target="_blank" class="yes"><i class="material-icons">check</i></a>
 {% endmacro %}
 
+<div class="branding">
+  <img class="branding__logo" src="img/worldbank-logo.png" alt="">
+  <h1 class="branding__title">The Impact of Open Government</h1>
+  <h2 class="branding__tagline">Mapping the landscape</h2>
+</div>
+
 <table class="table-header">
   
   <tr class="table-header__bottom table table-header-rotated">
@@ -14,7 +20,7 @@
     <td class="col-4" title="Countries">Countries</td>
     <td class="rotate cat-transparency" title="Increased knowledge of rights"><div><span>Increased knowledge of rights</span></div></td>
     <td class="rotate cat-transparency" title="Transparency"><div><span>Transparency</span></div></td>
-    <td class="rotate cat-transparency" title="Budget transparency"><div><span>Budget transparency</span></div></td>
+    <td class="rotate cat-transparency" title="Budget Transparency"><div><span>Budget transparency</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Voter turnout"><div><span>Voter turnout</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Evidence-based electoral decisionmaking"><div><span>Evidence-based electoral decisionmaking</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Enhanced engagement otder tdan voting"><div><span>Enhanced engagement otder tdan voting</span></div></td>
@@ -90,6 +96,11 @@
     {% endif %}
 
   {% endfor %}
+
+  <tr class="inter-header--final">
+      <td colspan="22">&nbsp;</td>
+    </tr>    
+
   </table>
 </div>
 {% endblock %}

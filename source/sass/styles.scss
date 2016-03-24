@@ -48,8 +48,45 @@ th {
 .links { 
   text-align: center; 
   width: 45px !important;
+
+
 }
+
 .links a { color: $black; }
+
+
+// ====================================================
+// Branding 
+// ====================================================
+
+.branding {
+  position: absolute;
+  padding: 40px;
+
+  &__logo {
+    max-width: 240px;
+  }
+
+  &__title,
+  &__tagline {
+    
+    margin: 0 0 0 52px;
+  }    
+
+  &__title {
+    font-weight: 300;
+    font-size: 1.3rem;    
+    color: rgba($black, .6);
+  }
+
+  &__tagline {
+    font-size: .9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba($black, .4);
+    letter-spacing: .3px;
+  }
+}
 
 
 // ====================================================
@@ -59,6 +96,7 @@ th {
 .table-scroll {
   height: 70vh;
   overflow: scroll;
+  padding-bottom: 50px;
 }
 
 
@@ -107,6 +145,10 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
     background-color: $main-color;
     color: white;
     letter-spacing: .5px;
+  }
+
+  &--final {
+    background-color: rgba($black, .8) !important;
   }
 }
 
