@@ -31,9 +31,28 @@ th {
 .links a {
   color: rgba(0, 0, 0, 0.7); }
 
+.branding {
+  position: absolute;
+  padding: 40px; }
+  .branding__logo {
+    max-width: 240px; }
+  .branding__title, .branding__tagline {
+    margin: 0 0 0 52px; }
+  .branding__title {
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6); }
+  .branding__tagline {
+    font-size: .9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: .3px; }
+
 .table-scroll {
   height: 70vh;
-  overflow: scroll; }
+  overflow: scroll;
+  padding-bottom: 50px; }
 
 .table-body__width-setter td {
   height: 0;
@@ -67,6 +86,8 @@ tr:nth-child(2n) {
     background-color: #00aff0;
     color: white;
     letter-spacing: .5px; }
+  .inter-header--final {
+    background-color: rgba(0, 0, 0, 0.8) !important; }
 
 .table-header {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
