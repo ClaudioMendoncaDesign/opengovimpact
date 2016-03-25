@@ -126,7 +126,7 @@
   "intervention": "Open Data",
   "organization": "NYU GovLab",
   "methodology": "Action Research",
-  "country": "US, Australia, Mexico, Italy, South Korea",
+  "country": ["US", "Australia", "Mexico", "Italy", "South Korea"],
   "category": "ict-based-transparency",
   "url": "http://www.opendata500.com/us/about/",
   "social_economic_change": { "trust_gov": true }
@@ -138,7 +138,8 @@
   "methodology": "Experimental Action Research",
   "country": "Various",
   "category": "ict-based-transparency",
-  "url": "http://www.opening-governance.org/lines-of-inquiry"
+  "url": "http://www.opening-governance.org/lines-of-inquiry",
+  "ongoing": true
 },
 
 {
@@ -147,7 +148,8 @@
   "methodology": "Case studies",
   "country": "Various",
   "category": "ict-based-transparency",
-  "url": "http://www.opendataresearch.org/project/2013/oddc"
+  "url": "http://www.opendataresearch.org/project/2013/oddc",
+  "ongoing": true
 },
 
 {
@@ -158,7 +160,7 @@
   "intervention": "Community Score Cards, Interface Meeting, Action Planning",
   "organization": "R4D",
   "methodology": "RCT, surveys, interviews",
-  "country": "Indonesia, Tanzania",
+  "country": ["Indonesia", "Tanzania"],
   "category": "community-based-participation",
   "url": "http://t4dproject.org/sites/default/files/file-uploads/T4D one pager - December 2015_0.pdf",
   "citizen_engagement": { "enhanced_engagement": true },
@@ -187,15 +189,6 @@
   "accountability": { "improved_services": true },
   "accountability": { "other": true },
   "social_economic_change": { "improved_health": true }
-},
-{
-  "intervention": "Community monitoring of traditional leaders",
-  "organization": "EGAP",
-  "methodology": "RCT",
-  "country": "Malawi",
-  "category": "community-based-participation",
-  "url": "http://egap.org/content/accountability-among-traditional-leaders-pilot-experiment-monitoring-and-leakage-malawi",
-  "transparency": { "increased_knowledge": true }
 },
 {
   "intervention": "Community driven development",
@@ -253,34 +246,6 @@
   "social_economic_change": { "compliance": true }
 },
 {
-  "intervention": "Civic Engagement",
-  "organization": "MAVC",
-  "methodology": "Mixed methods",
-  "country": "Various",
-  "category": "community-based-participation",
-  "url": "http://www.makingallvoicescount.org/wp-content/uploads/2015/08/RE-strategy.pdf",
-  "transparency": { "increased_knowledge": true }
-},
-{
-  "intervention": "Vertical integration of social accountability mechanisms",
-  "organization": "AU ARC",
-  "methodology": "Action research",
-  "country": "Various",
-  "category": "community-based-participation",
-  "url": "",
-  "transparency": { "increased_knowledge": true }
-},
-{
-  "intervention": "Mix of empowerment and accountability interventions",
-  "organization": "IDS",
-  "methodology": "Mixed methods",
-  "country": "4-6 countries including fragile contexts",
-  "category": "community-based-participation",
-  "url": "https://www.devex.com/projects/tenders/empowerment-accountability-e-a-research-programme/181097",
-  "transparency": { "increased_knowledge": true }
-},
-
-{
   "intervention": "Social audit of traditional leaders",
   "organization": "EGAP",
   "methodology": "RCT",
@@ -292,6 +257,44 @@
   "accountability": { "reduced_corruption": true },
   "accountability": { "other": true }
 },
+{
+  "intervention": "Community monitoring of traditional leaders",
+  "organization": "EGAP",
+  "methodology": "RCT",
+  "country": "Malawi",
+  "category": "community-based-participation",
+  "url": "http://egap.org/content/accountability-among-traditional-leaders-pilot-experiment-monitoring-and-leakage-malawi",
+  "ongoing": true
+},
+{
+  "intervention": "Civic Engagement",
+  "organization": "MAVC",
+  "methodology": "Mixed methods",
+  "country": "Various",
+  "category": "community-based-participation",
+  "url": "http://www.makingallvoicescount.org/wp-content/uploads/2015/08/RE-strategy.pdf",
+  "ongoing": true
+},
+{
+  "intervention": "Vertical integration of social accountability mechanisms",
+  "organization": "AU ARC",
+  "methodology": "Action research",
+  "country": "Various",
+  "category": "community-based-participation",
+  "url": "",
+  "ongoing": true
+},
+{
+  "intervention": "Mix of empowerment and accountability interventions",
+  "organization": "IDS",
+  "methodology": "Mixed methods",
+  "country": "4-6 countries including fragile contexts",
+  "category": "community-based-participation",
+  "url": "https://www.devex.com/projects/tenders/empowerment-accountability-e-a-research-programme/181097",
+  "ongoing": true
+},
+
+
 { "intertitle": "Citizen Engagement and Participation Interventions: primarily ICT-based mobilization and monitoring" },
 
 {
@@ -366,7 +369,7 @@
   "country": "Various",
   "category": "ict-based-participation",
   "url": "http://www.makingallvoicescount.org/wp-content/uploads/2015/08/RE-strategy.pdf",
-  "transparency": { "increased_knowledge": true }
+  "ongoing": true
 },
 {
   "intertitle": "Responsiveness/legal reform interventions (teeth)"
@@ -396,7 +399,7 @@
   "intervention": "FOI Law",
   "organization": "Carter Center",
   "methodology": "Mixed methods",
-  "country": "Liberia, Guatemala",
+  "country": ["Liberia", "Guatemala"],
   "category": "legal-reform",
   "url": "http://www.cartercenter.org/peace/ati/women/women-access-to-information.html",
   "citizen_engagement": { "enhanced_engagement": true }
@@ -425,7 +428,7 @@
   "intervention": "Mix of public sector reforms focused on open govenrment",
   "organization": "ESID",
   "methodology": "Mixed methods",
-  "country": "Ghana, Malawi, Rwanda and Uganda",
+  "country": ["Ghana", "Malawi", "Rwanda", "Uganda"],
   "category": "legal-reform",
   "url": "",
   "accountability": { "reduced_corruption": true },
@@ -444,10 +447,10 @@
   "intervention": "OGP reforms",
   "organization": "OGP",
   "methodology": "Case studies",
-  "country": "Costa Rica, Albania, Mexico, Philippines",
+  "country": ["Costa Rica", "Albania", "Mexico", "Philippines"],
   "category": "legal-reform",
   "url": "http://www.opengovpartnership.org/topics?f%5B0%5D=type%3Acase_study",
-  "transparency": { "increased_knowledge": true }
+  "ongoing": true
 },
 {
   "intervention": "OGP reforms",
@@ -456,8 +459,7 @@
   "country": "Various",
   "category": "legal-reform",
   "url": "",
-  "transparency": { "increased_knowledge": true },
-  "accountability": { "improved_services": true }
+  "ongoing": true
 },
 {
   "intervention": "OGP reforms",
@@ -466,7 +468,7 @@
   "country": "Various",
   "category": "legal-reform",
   "url": "https://www.globalintegrity.org/2015/10/lever-of-change-learning-to-make-ogp-effective-at-the-country-level/",
-  "transparency": { "increased_knowledge": true }
+  "ongoing": true
 },
 {
   "intervention": "Focus on the reformer",
@@ -475,7 +477,7 @@
   "country": "Various",
   "category": "legal-reform",
   "url": "",
-  "transparency": { "increased_knowledge": true }
+  "ongoing": true
 },
 {
   "intervention": "SDG-related governance reforms",
@@ -484,6 +486,6 @@
   "country": "Various",
   "category": "legal-reform",
   "url": "http://www.3ieimpact.org/media/filer_public/2015/12/02/dpw1-eoi.pdf",
-  "transparency": { "increased_knowledge": true }
+  "ongoing": true
 }
 ]}

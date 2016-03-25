@@ -2,7 +2,7 @@
 {% block main %}
 
 {% macro yes() %}
-<a href="{{d.url}}" target="_blank" class="yes"><i class="material-icons">check</i></a>
+<a href="{{d.url}}" target="_blank" class="yes" title="{{d.intervention}} | {{d.organization}}"><i class="material-icons">check</i></a>
 {% endmacro %}
 
 <div class="branding">
@@ -13,7 +13,7 @@
 
 <table class="table-header">
   
-  <tr class="table-header__bottom table table-header-rotated">
+  <tr class="table-header__top table table-header-rotated">
     <td class="col-1" title="Type of Intervention tested">Type of Intervention tested</td>
     <td class="col-2" title="Organization">Organization</td>
     <td class="col-3" title="Primary Metdodology">Primary Metdodology</td>
@@ -23,7 +23,7 @@
     <td class="rotate cat-transparency" title="Budget Transparency"><div><span>Budget transparency</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Voter turnout"><div><span>Voter turnout</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Evidence-based electoral decisionmaking"><div><span>Evidence-based electoral decisionmaking</span></div></td>
-    <td class="rotate cat-citizen-engagement" title="Enhanced engagement otder tdan voting"><div><span>Enhanced engagement otder tdan voting</span></div></td>
+    <td class="rotate cat-citizen-engagement" title="Enhanced engagement otder tdan voting"><div><span>Enhanced engagement other than voting</span></div></td>
     <td class="rotate cat-responsiveness" title="Answerability"><div><span class="">Answerability</span></div></td>
     <td class="rotate cat-responsiveness" title="More inclusive decision-making"><div><span class="">More inclusive decision-making</span></div></td>
     <td class="rotate cat-accountability" title="Hiring and firing"><div><span class="">Hiring and firing</span></div></td>
@@ -32,13 +32,13 @@
     <td class="rotate cat-accountability" title="Reduced corruption"><div><span class="">Reduced corruption</span></div></td>
     <td class="rotate cat-accountability" title="Otder local gov't and service provider accountability"><div><span class="">Otder local gov't and service provider accountability</span></div></td>
     <td class="rotate cat-social-economic-change" title="Increased efficiency of government"><div><span class="">Increased efficiency of government</span></div></td>
-    <td class="rotate cat-social-economic-change" title="Improved Healtd Outcomes"><div><span class="">Improved Healtd Outcomes</span></div></td>
+    <td class="rotate cat-social-economic-change" title="Improved Healtd Outcomes"><div><span class="">Improved Health Outcomes</span></div></td>
     <td class="rotate cat-social-economic-change" title="Regulatory compliance"><div><span class="">Regulatory compliance</span></div></td>
     <td class="rotate cat-social-economic-change" title="Trust in government"><div><span class="">Trust in government</span></div></td>
     <td class="inactive-cell"></td>
   </tr>
   <tr class="table-categories">
-      <th title="Open Government Outcomes and Impact" class="cat-info" colspan="4">Open Government Outcomes and Impact</th>
+      <th title="Open Government Outcomes and Impact" class="cat-info" colspan="4">Types of Open Government Outcomes and Impact Examined</th>
       <th title="Transparency" class="cat-transparency" colspan="3">Transparency</th>
       <th title="Citizen Engagement and Participation" class="cat-citizen-engagement" colspan="3">Citizen Engagement and Participation</th>
       <th title="Responsiveness" class="cat-responsiveness" colspan="2">Responsiveness</th>
@@ -72,7 +72,13 @@
       <td class="col-1" title="{{d.intervention}}">{{d.intervention}}</td>
       <td class="col-2" title="{{d.organization}}">{{d.organization}}</td>
       <td class="col-3" title="{{d.methodology}}">{{d.methodology}}</td>
+      
       <td class="col-4" title="{{d.country}}">{{d.country}}</td>
+
+      {% if d.ongoing %}
+      <td colspan="17" class="regular-item__ongoing"><a href="{{d.url}}" title="Go to this project">This is an ongoing project</a></td>
+
+      {% else %}
       <td class="links cat-transparency">{% if d.transparency.increased_knowledge %} {{yes()}} {% endif %}</td>
       <td class="links cat-transparency">{% if d.transparency.transparency %} {{yes()}} {% endif %}</td>
       <td class="links cat-transparency">{% if d.transparency.budget %} {{yes()}} {% endif %}</td>
@@ -90,7 +96,8 @@
       <td class="links cat-social-economic-change">{% if d.social_economic_change.improved_health %} {{yes()}} {% endif %}</td>
       <td class="links cat-social-economic-change">{% if d.social_economic_change.compliance %} {{yes()}} {% endif %}</td>
       <td class="links cat-social-economic-change">{% if d.social_economic_change.trust_gov %} {{yes()}} {% endif %}</td>
-      
+      {% endif %}
+
       <td class="inactive-cell"></td>
     </tr>
     {% endif %}

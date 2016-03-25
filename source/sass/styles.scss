@@ -1,4 +1,34 @@
 // ====================================================
+// Utility class for material icons
+// ====================================================
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+// ====================================================
 // Declaring Variables for the colors in the table
 // ====================================================
 
@@ -48,11 +78,7 @@ th {
 .links { 
   text-align: center; 
   width: 45px !important;
-
-
 }
-
-.links a { color: $black; }
 
 
 // ====================================================
@@ -61,7 +87,10 @@ th {
 
 .branding {
   position: absolute;
-  padding: 40px;
+  background-color: white;
+  padding: 42px 0 42px 42px;
+  width: 40%;
+  min-width: 400px;
 
   &__logo {
     max-width: 240px;
@@ -69,7 +98,6 @@ th {
 
   &__title,
   &__tagline {
-    
     margin: 0 0 0 52px;
   }    
 
@@ -114,20 +142,22 @@ th {
 // Sets the zebra apttern for the rows
 // ====================================================
 
+.col-2,
+.col-4,
 tr:nth-child(2n) { background-color: rgba($black, .05); }
 
 // ====================================================
 // Setting the width and bg-color of the columns
 // ====================================================
 
-.col-1 { width: 20%; }
+.col-1 { width: 18%; }
 .col-2 { width:  7%; }
 .col-3 { width:  9%; }
 .col-4 { width:  5%; }
 
 .inactive-cell { 
   background-color: rgba(white, .5); 
-  width: 6%;
+  width: 5%;
 }
 
 
@@ -160,9 +190,9 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 .table-header {
   box-shadow: 0 3px 5px rgba($black, .2);
 
-  td { padding: 10px; }
+  td { padding: 10px 15px 10px 5px; }
 
-  &__bottom td { vertical-align: bottom; }
+  &__top td { vertical-align: bottom; }
 }
 
 .table-categories {
@@ -180,6 +210,57 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 
 
 // ====================================================
+// Styles for the Rows
+// ====================================================
+.regular-item {
+  
+  &__ongoing {
+    text-align: center;
+    // background-color: rgba($main-color, .4);
+
+    a { 
+      text-decoration: none; 
+      font-weight: 400;
+      color: $main-color;
+      padding: 7px;
+      display: block;
+      font-size: 12px;
+    }
+
+  }
+}
+
+.yes {
+  color: rgba($black, .7);
+  position: relative;
+  padding: 2px;
+  vertical-align: bottom;
+  display: inline-block;
+
+  &:after {
+    @extend .u-material-icons;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $main-color;
+    color: white;
+    box-shadow: 2px 2px 5px rgba($black, .2);
+    content: "link";
+    display: inline-block;
+    left: -4px;
+    top: 0px;
+    padding: 4px 4px 6px 4px;
+    border-radius: 23px;
+    transform: scale(0) rotate(145deg);
+    transition: all .3s ease;
+  }
+
+  &:hover:after {
+    transform: scale(1) rotate(-45deg);
+    transition: all .3s ease;
+  }
+}
+// ====================================================
 // Sets the styles for the inclined labels
 // ====================================================
 
@@ -194,13 +275,13 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
     > div {
       transform: 
         // Magic Numbers
-        translate(18px, 5px)
+        translate(22px, 5px)
         // 45 is really 360-45
         rotate(315deg);
       width: 30px;
     }
     > div > span {
-      padding: 8px 9px 8px 0;
+      padding: 9px 0 8px 0;
       width: 350px;
       display: inline-block;
       position: relative;
