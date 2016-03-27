@@ -1,4 +1,4 @@
-.u-material-icons, .yes:after {
+.u-material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -20,6 +20,150 @@
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
+@media (max-width: 640px) {
+  .branding {
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #00aff0; }
+    .branding__logo {
+      max-width: 50%; }
+    .branding__title {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 0; }
+    .branding__tagline {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.4); } }
+
+@media (min-width: 64em) {
+  .branding {
+    position: absolute;
+    background-color: white;
+    padding: 42px 0 42px 42px;
+    width: 40%;
+    min-width: 400px; }
+    .branding__logo {
+      max-width: 240px; }
+    .branding__title, .branding__tagline {
+      margin: 0 0 0 52px; }
+    .branding__title {
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.6); }
+    .branding__tagline {
+      font-size: .9rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.4);
+      letter-spacing: .3px; } }
+
+@media (min-width: 64em) {
+  #mobile {
+    display: none; } }
+
+.button {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0, 175, 240, 0.3);
+  background-color: rgba(0, 175, 240, 0.15);
+  width: 100%;
+  display: inline-block;
+  color: #00aff0;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+
+.mobile-list {
+  padding: 0; }
+
+.mobile-item {
+  list-style-type: none;
+  padding: 30px 20px; }
+  .mobile-item:nth-child(2n + 1) {
+    background-color: rgba(0, 0, 0, 0.03); }
+  .mobile-item__intervention {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7); }
+  .mobile-item__organization {
+    margin: 0;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6); }
+  .mobile-item__country, .mobile-item__methodology {
+    font-size: .9rem;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3); }
+    .mobile-item__country span, .mobile-item__methodology span {
+      color: rgba(0, 0, 0, 0.7);
+      display: block; }
+  .mobile-item__methodology {
+    margin: 10px 0 0 0;
+    overflow: hidden; }
+  .mobile-item__country {
+    margin: 0; }
+  .mobile-item__link a {
+    margin-top: 10px; }
+  .mobile-item__ongoing {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: #00aff0;
+    margin: 10px 0 0;
+    color: white;
+    text-transform: uppercase; }
+  .mobile-item__engagement {
+    margin-bottom: 5px; }
+    .mobile-item__engagement > div {
+      max-height: 0;
+      transition: all .4s ease;
+      margin: 0;
+      overflow: hidden; }
+    .mobile-item__engagement h3 {
+      font-size: .9rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 5px; }
+    .mobile-item__engagement p {
+      font-size: .8rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      padding: 0 5px;
+      margin: 5px 0; }
+  .mobile-item--transparency h3 {
+    background-color: rgba(200, 100, 0, 0.2); }
+  .mobile-item--transparency > div {
+    background-color: rgba(200, 100, 0, 0.1); }
+  .mobile-item--citizen-engagement h3 {
+    background-color: rgba(0, 200, 100, 0.2); }
+  .mobile-item--citizen-engagement > div {
+    background-color: rgba(0, 200, 100, 0.1); }
+  .mobile-item--responsiveness h3 {
+    background-color: rgba(100, 0, 200, 0.2); }
+  .mobile-item--responsiveness > div {
+    background-color: rgba(100, 0, 200, 0.1); }
+  .mobile-item--accountability h3 {
+    background-color: rgba(0, 50, 150, 0.2); }
+  .mobile-item--accountability > div {
+    background-color: rgba(0, 50, 150, 0.1); }
+  .mobile-item--social-change h3 {
+    background-color: rgba(150, 150, 0, 0.2); }
+  .mobile-item--social-change > div {
+    background-color: rgba(150, 150, 0, 0.1); }
+
+.mobile-item.js-active .mobile-item__engagement > div {
+  max-height: 100px;
+  transition: all .4s ease; }
+
 body {
   font-size: 11px;
   line-height: 1.5;
@@ -27,8 +171,10 @@ body {
   font-weight: 100;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  overflow: hidden; }
+  width: 100vw; }
+  @media (min-width: 64em) {
+    body {
+      overflow: hidden; } }
 
 table {
   border-collapse: collapse;
@@ -49,27 +195,6 @@ th {
 .links {
   text-align: center;
   width: 45px !important; }
-
-.branding {
-  position: absolute;
-  background-color: white;
-  padding: 42px 0 42px 42px;
-  width: 40%;
-  min-width: 400px; }
-  .branding__logo {
-    max-width: 240px; }
-  .branding__title, .branding__tagline {
-    margin: 0 0 0 52px; }
-  .branding__title {
-    font-weight: 300;
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.6); }
-  .branding__tagline {
-    font-size: .9rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.4);
-    letter-spacing: .3px; }
 
 .table-scroll {
   height: 70vh;
@@ -144,25 +269,20 @@ tr:nth-child(2n) {
   position: relative;
   padding: 2px;
   vertical-align: bottom;
-  display: inline-block; }
-  .yes:after {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: #00aff0;
+  display: inline-block;
+  transform: scale(1) rotate(-45deg);
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 175, 240, 0.5);
+  border-radius: 23px;
+  transition: all .3s ease;
+  border: 1px solid rgba(0, 175, 240, 0.5); }
+  .yes:hover {
+    transform: scale(1.2) rotate(315deg);
+    transition: all .3s ease;
     color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    content: "link";
-    display: inline-block;
-    left: -4px;
-    top: 0px;
-    padding: 4px 4px 6px 4px;
-    border-radius: 23px;
-    transform: scale(0) rotate(145deg);
-    transition: all .3s ease; }
-  .yes:hover:after {
-    transform: scale(1) rotate(-45deg);
-    transition: all .3s ease; }
+    background-color: #00aff0; }
 
 .table-header-rotated .rotate {
   overflow: visible;
@@ -306,3 +426,7 @@ tr:nth-child(2n) {
 
 .table-header-rotated .cat-social-economic-change > div > span:before {
   border-right-color: rgba(150, 150, 0, 0.1); }
+
+@media (max-width: 640px) {
+  #desktop {
+    display: none; } }
