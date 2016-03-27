@@ -156,28 +156,20 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
   padding: 2px;
   vertical-align: bottom;
   display: inline-block;
+  transform: scale(1) rotate(-45deg);
+  width: 24px;
+  height: 24px;
+  background-color: rgba(white, .7);
+  color: rgba($main-color, .5);
+  border-radius: 23px;
+  transition: all .3s ease;
+  border: 1px solid rgba($main-color, .5);
 
-  &:after {
-    @extend .u-material-icons;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: $main-color;
+  &:hover {
+    transform: scale(1.2) rotate(315deg);    
+    transition: all .3s ease;
     color: white;
-    box-shadow: 2px 2px 5px rgba($black, .2);
-    content: "link";
-    display: inline-block;
-    left: -4px;
-    top: 0px;
-    padding: 4px 4px 6px 4px;
-    border-radius: 23px;
-    transform: scale(0) rotate(145deg);
-    transition: all .3s ease;
-  }
-
-  &:hover:after {
-    transform: scale(1) rotate(-45deg);
-    transition: all .3s ease;
+    background-color: $main-color;
   }
 }
 
