@@ -1,0 +1,134 @@
+#mobile {
+  @include breakpoint($large) {
+    display: none;
+  }
+}
+
+.button {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid rgba($main-color, .3);
+  background-color: rgba($main-color, .15);
+  width: 100%;
+  display: inline-block;
+  color: $main-color;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  box-shadow: 2px 2px 10px rgba($black, .1);
+}
+
+.mobile-list {
+  padding: 0;
+}
+
+.mobile-item {
+  list-style-type: none;
+  padding: 30px 20px;
+
+  &:nth-child(2n + 1) { background-color: rgba($black, .03); }
+
+  &__intervention {
+    font-size: 1.1rem;  
+    font-weight: 600;
+    margin: 0;
+    color: rgba($black, .7);
+  }
+  &__organization {
+    margin: 0;
+    font-weight: 400;
+    color: rgba($black, .6);
+  }
+  
+  &__country,
+  &__methodology {
+    font-size: .9rem;
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba($black, .3);
+
+    span { 
+      color: $black; 
+      display: block;
+    }
+  }
+
+  &__methodology { 
+    margin: 10px 0 0 0;
+    overflow: hidden;
+  }
+
+  &__country { margin: 0; }
+
+  &__link a { margin-top: 10px; }
+
+  &__ongoing {
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: $main-color;
+    margin: 10px 0 0;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  &__engagement {
+    margin-bottom: 5px;
+    
+    > div { 
+      max-height: 0;
+      transition: all .4s ease;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h3 {
+      font-size: .9rem;  
+      font-weight: 200;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 5px;
+    }
+
+    p {
+      font-size: .8rem;  
+      font-weight: 200;
+      text-transform: uppercase;
+      padding: 0 5px;
+      margin: 5px 0;
+    }
+  }
+
+  &--transparency {
+    h3 { background-color: rgba($transparency-color, .2); }
+    > div { background-color: rgba($transparency-color, .1); }
+  }
+  
+  &--citizen-engagement {
+    h3 { background-color: rgba($citizen-engagement-color, .2); }
+    > div { background-color: rgba($citizen-engagement-color, .1); }
+  }
+  
+  &--responsiveness {
+    h3 { background-color: rgba($responsiveness-color, .2); }
+    > div { background-color: rgba($responsiveness-color, .1); }
+  }
+
+  &--accountability {
+    h3 { background-color: rgba($accountability-color, .2); }
+    > div { background-color: rgba($accountability-color, .1); }
+  } 
+
+  &--social-change {
+    h3 { background-color: rgba($social-change-color, .2); }
+    > div { background-color: rgba($social-change-color, .1); }
+  }
+}
+
+.mobile-item.js-active .mobile-item__engagement > div { 
+  max-height: 100px;
+  transition: all .4s ease;
+} 

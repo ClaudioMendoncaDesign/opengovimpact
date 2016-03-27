@@ -1,0 +1,49 @@
+// ====================================================
+// Utility class for material icons
+// ====================================================
+
+.u-material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+// ====================================================
+// Screen Sizes
+// ====================================================
+$small: max-width 640px;
+$medium: 40em;
+$large: 64em;
+
+
+// ====================================================
+// Declaring Variables for the colors in the table
+// ====================================================
+
+$black: rgba(0,0,0,.7);
+$main-color: rgba(0, 175, 240,1);
+$transparency-color: rgba(200, 100, 0, 1);
+$citizen-engagement-color: rgba(0, 200, 100, 1);
+$responsiveness-color: rgba( 100, 0, 200, 1);
+$accountability-color: rgba(0, 50, 150, 1);
+$social-change-color: rgba(150, 150, 0, 1);
+

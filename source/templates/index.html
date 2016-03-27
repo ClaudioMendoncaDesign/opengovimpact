@@ -11,6 +11,7 @@
   <h2 class="branding__tagline">Mapping the landscape</h2>
 </div>
 
+<div id="desktop">
 <table class="table-header">
   
   <tr class="table-header__top table table-header-rotated">
@@ -109,5 +110,92 @@
     </tr>    
 
   </table>
+</div>
+</div> <!-- End #Desktop View -->
+
+<div id="mobile">
+
+<ul class="mobile-list">
+{% for d in data %}
+    {% if d.intervention %}
+    <li class="mobile-item js-toggle">
+
+      <h1 class="mobile-item__intervention">{{d.intervention}}</h1>
+      <h2 class="mobile-item__organization">{{d.organization}}</h2>
+      
+      {% if d.methodology %}<p class="mobile-item__methodology">Methodology <span>{{ d.methodology}}</span></p>{% endif %}
+      {% if d.country %}<p class="mobile-item__country">Country <span>{{ d.country}}</span></p>{% endif %}
+      
+      {% if d.transparency %}
+      <div class="mobile-item__engagement mobile-item--transparency">
+        <h3>Transparency</h3>
+        <div>
+          {% if d.transparency.increased_knowledge %}<p>Increased knowledge of rights</p>{% endif %}
+          {% if d.transparency.transparency %}<p>Transparency</p>{% endif %}
+          {% if d.transparency.budget %}<p>Budget transparency</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+      
+      {% if d.citizen_engagement %}
+      <div class="mobile-item__engagement mobile-item--citizen-engagement">
+        <h3>Citizen Engagement and Participation</h3>
+        <div>
+          {% if d.citizen_engagement.voter_turnout %}<p>Voter turnout</p>{% endif %}
+          {% if d.citizen_engagement.evidence_based %}<p>Evidence-based electoral decisionmaking</p>{% endif %}
+          {% if d.citizen_engagement.enhanced_engagement %}<p>Enhanced engagement other than voting</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+      
+      {% if d.responsiveness %}
+      <div class="mobile-item__engagement mobile-item--responsiveness">
+        <h3>Responsiveness</h3>
+        <div>
+          {% if d.responsiveness.answerability %}<p>Answerability</p>{% endif %}
+          {% if d.responsiveness.inclusive_decisionmaking %}<p>More inclusive decision-making</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if d.accountability %}
+      <div class="mobile-item__engagement mobile-item--accountability">
+        <h3>Accountability</h3>
+        <div>
+          {% if d.accountability.hiring_firing %}<p>Hiring and firing</p>{% endif %}
+          {% if d.accountability.service_delivery %}<p>Equitable service delivery</p>{% endif %}
+          {% if d.accountability.improved_services %}<p>Improved Public Services</p>{% endif %}
+          {% if d.accountability.reduced_corruption %}<p>Reduced corruption</p>{% endif %}
+          {% if d.accountability.other %}<p>Other local government and service provider accountability</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if d.social_economic_change %}
+      <div class="mobile-item__engagement mobile-item--social-change">
+        <h3 style="letter-spacing: -0.2px">Social, Economic, Environmental change</h3>   
+        <div>
+          {% if d.social_economic_change.increased_efficiency %}<p>Increased efficiency of government</p>{% endif %}
+          {% if d.social_economic_change.improved_health %}<p>Improved Health Outcomes</p>{% endif %}
+          {% if d.social_economic_change.compliance %}<p>Regulatory compliance</p>{% endif %}
+          {% if d.social_economic_change.trust_gov %}<p>Trust in government</p>{% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if d.ongoing %}
+        <p class="mobile-item__ongoing">This is an ongoing project</p>
+      {% endif %}
+
+      <p class="mobile-item__link"><a class="button" href="{{d.url}}" target="_blank">Go to Project</a></p>
+
+    </li>
+    {% endif %}
+
+    
+
+{% endfor %}
+</ul>
+
 </div>
 {% endblock %}
