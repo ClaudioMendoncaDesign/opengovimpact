@@ -35,7 +35,7 @@ gulp.task('img', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src(['node_modules/govlab-styleguide/js/**/*', 'source/js/**/*'])
+  return gulp.src('source/js/**/*')
   .pipe(plumber())
   .pipe(gulp.dest('public/js'))
   .pipe(browserSync.stream());
@@ -63,8 +63,13 @@ gulp.task('nunjucks', function() {
   }))
 });
 
-gulp.task('deploy', ['sass', 'nunjucks', 'js', 'img'], shell.task([
+gulp.task('deploydev', ['sass', 'nunjucks', 'js', 'img'], shell.task([
   'git subtree push --prefix public origin gh-pages'
+  ])
+);
+
+gulp.task('deploy', ['sass', 'nunjucks', 'js', 'img'], shell.task([
+  'git subtree push --prefix public prod gh-pages'
   ])
 );
 
