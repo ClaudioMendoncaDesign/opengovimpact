@@ -41,6 +41,11 @@ gulp.task('js', function() {
   .pipe(browserSync.stream());
 });
 
+gulp.task('domain', function() {
+  return gulp.src('source/CNAME')
+  .pipe(gulp.dest('public/'));
+});
+
 // Nunjucks
 gulp.task('nunjucks', function() {
 
@@ -68,7 +73,7 @@ gulp.task('deploydev', ['sass', 'nunjucks', 'js', 'img'], shell.task([
   ])
 );
 
-gulp.task('deploy', ['sass', 'nunjucks', 'js', 'img'], shell.task([
+gulp.task('deploy', ['sass', 'nunjucks', 'js', 'domain', 'img'], shell.task([
   'git subtree push --prefix public prod gh-pages'
   ])
 );
