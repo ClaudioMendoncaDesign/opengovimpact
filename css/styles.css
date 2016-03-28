@@ -36,18 +36,22 @@
       font-weight: 600;
       font-size: 1rem;
       text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.4); } }
+      color: rgba(0, 0, 0, 0.4); }
+    .branding__status {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 100; } }
 
 @media (min-width: 64em) {
   .branding {
     position: absolute;
     background-color: white;
-    padding: 42px 0 42px 42px;
+    padding: 42px 0 18px 42px;
     width: 40%;
     min-width: 400px; }
     .branding__logo {
       max-width: 240px; }
-    .branding__title, .branding__tagline {
+    .branding__title, .branding__tagline, .branding__status {
       margin: 0 0 0 52px; }
     .branding__title {
       font-weight: 300;
@@ -58,7 +62,10 @@
       font-weight: 800;
       text-transform: uppercase;
       color: rgba(0, 0, 0, 0.4);
-      letter-spacing: .3px; } }
+      letter-spacing: .3px; }
+    .branding__status {
+      text-transform: uppercase;
+      font-weight: 100; } }
 
 @media (min-width: 64em) {
   #mobile {
