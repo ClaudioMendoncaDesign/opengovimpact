@@ -68,13 +68,8 @@ gulp.task('nunjucks', function() {
   }))
 });
 
-gulp.task('deploydev', ['sass', 'nunjucks', 'js', 'img'], shell.task([
-  'git subtree push --prefix public origin gh-pages'
-  ])
-);
-
 gulp.task('deploy', ['sass', 'nunjucks', 'js', 'domain', 'img'], shell.task([
-  'git subtree push --prefix public prod gh-pages'
+  'git subtree push --prefix public origin gh-pages'
   ])
 );
 
