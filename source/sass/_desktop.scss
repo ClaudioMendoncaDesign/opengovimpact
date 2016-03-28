@@ -151,25 +151,24 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 }
 
 .yes {
-  color: rgba($black, .7);
   position: relative;
+  background-color: rgba($black, .2);
   padding: 2px;
   vertical-align: bottom;
   display: inline-block;
   transform: scale(1) rotate(-45deg);
   width: 24px;
   height: 24px;
-  background-color: rgba(white, .7);
-  color: rgba($main-color, .5);
+  color: white;
   border-radius: 23px;
   transition: all .3s ease;
-  border: 1px solid rgba($main-color, .5);
+
 
   &:hover {
-    transform: scale(1.2) rotate(315deg);    
+    transform: scale(1.2) rotate(135deg);    
     transition: all .3s ease;
     color: white;
-    background-color: $main-color;
+    background-color: rgba($black, .7);
   }
 }
 
@@ -221,22 +220,27 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 // ====================================================
 
 .links.cat-transparency                           { background-color:   rgba($transparency-color, .1); }
+.links.cat-transparency .yes                      { background-color:   rgba($transparency-color, 1); }
 .links.cat-transparency:nth-of-type(2n)           { background-color:   rgba($transparency-color, .15); }
 .cat-transparency:before                          { border-right-color: rgba($transparency-color, .1) !important; }
 
 .links.cat-citizen-engagement                     { background-color:   rgba($citizen-engagement-color, .1); }
+.links.cat-citizen-engagement .yes                { background-color:   rgba($citizen-engagement-color, 1); }
 .links.cat-citizen-engagement:nth-of-type(2n)     { background-color:   rgba($citizen-engagement-color, .15); }
 .cat-citizen-engagement:before                    { border-right-color: rgba($citizen-engagement-color, .1) !important; }
 
 .links.cat-responsiveness                         { background-color:   rgba($responsiveness-color, .1); }
+.links.cat-responsiveness .yes                    { background-color:   rgba($responsiveness-color, 1); }
 .links.cat-responsiveness:nth-of-type(2n)         { background-color:   rgba($responsiveness-color, .15); }
 .cat-responsiveness:before                        { border-right-color: rgba($responsiveness-color, .1) !important; }
 
 .links.cat-accountability                         { background-color:   rgba($accountability-color, .1); }
+.links.cat-accountability .yes                    { background-color:   rgba($accountability-color, 1); }
 .links.cat-accountability:nth-of-type(2n)         { background-color:   rgba($accountability-color, .15); }
 .cat-accountability:before                        { border-right-color: rgba($accountability-color, .1) !important; }
 
 .links.cat-social-economic-change                 { background-color:   rgba($social-change-color, .1); }
+.links.cat-social-economic-change .yes            { background-color:   rgba($social-change-color, 1); }
 .links.cat-social-economic-change:nth-of-type(2n) { background-color:   rgba($social-change-color, .15); }
 .cat-social-economic-change:before                { border-right-color: rgba($social-change-color, .1) !important; }
 
