@@ -67,6 +67,26 @@
       text-transform: uppercase;
       font-weight: 100; } }
 
+.inter-header--final {
+  text-align: center; }
+
+.byline {
+  background-color: #333;
+  display: inline-block;
+  color: #666;
+  padding: 3px 8px;
+  text-decoration: none; }
+  .byline:hover {
+    color: white; }
+
+.mobile-item--byline {
+  text-align: center;
+  background-color: #333 !important; }
+  .mobile-item--byline a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: .9rem; }
+
 @media (min-width: 64em) {
   #mobile {
     display: none; } }
