@@ -33,18 +33,18 @@
   @include breakpoint($large) {
     position: absolute;
     background-color: white;
-    padding: 42px 0 18px 42px;
+    padding: 20px 0 40px 42px;
     width: 40%;
     min-width: 400px;  
 
     &__logo {
-      max-width: 240px;
+      max-width: 340px;
     }
 
     &__title,
     &__tagline,
     &__status {
-      margin: 0 0 0 52px;
+      margin: 0 0 0 65px;
     }    
 
     &__title {
@@ -68,16 +68,58 @@
   }
 }
 
+
+// ====================================================
+// Main Nav
+// ====================================================
+
+.main-nav {
+  background-color: $main-color;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+
+  &__item {
+    padding: 5px 25px;
+    display: inline-block;
+    font-family: $fancy-type;
+    text-decoration: none;
+    color: rgba(white, .6);
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    font-size: .8rem;
+
+    &:hover {
+      background-color: rgba(white, .1);
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+
+
+// ====================================================
 // By Line
+// ====================================================
+
 
 .inter-header--final { text-align: center; }
 
 .byline {
-  background-color: #333;
   display: inline-block;
-  color: #666;
+  color: #ddd;
   padding: 3px 8px;
   text-decoration: none;
+  background-color: $black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: right;
 
   &:hover {
     color: white;
@@ -86,7 +128,7 @@
 
 .mobile-item--byline {
   text-align: center;
-  background-color: #333 !important;
+  background-color: $black;
   a { 
     color: #ddd; 
     text-decoration: none;

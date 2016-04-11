@@ -36,11 +36,17 @@ $large: 64em;
 
 
 // ====================================================
+// Variables for Typography
+// ====================================================
+
+$fancy-type: 'Montserrat', sans-serif;
+
+// ====================================================
 // Declaring Variables for the colors in the table
 // ====================================================
 
-$black: rgba(0,0,0,.7);
-$main-color: rgba(0, 175, 240,1);
+$black: #333;
+$main-color: #4d7d87;
 $transparency-color: rgba(200, 100, 0, 1);
 $citizen-engagement-color: rgba(0, 200, 100, 1);
 $responsiveness-color: rgba( 100, 0, 200, 1);

@@ -8,6 +8,7 @@
     <meta property="og:site_name" content="Open Gov Impact"/>
     <meta property="og:title" content="Open Government Impact & Outcomes | Mapping the Landscape of Ongoing Research"/>
     <meta property="og:description" content="Based on information from 20 respondent organizations from across the academic-practitioner spectrum, the report maps a selection of open government interventions currently under study, as well as the outcomes and impact associated with each. Looking ahead, and with this landscape in mind, the Bank can contribute to understanding of open government in several ways."/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <meta property="og:image" content="./img/open-gov-impact-preview.jpg">
     <meta property="og:url" content="http://opengovimpact.org/">
     <meta property="og:type" content="project website"/>
@@ -18,14 +19,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="">
-    {% block main %}
-    
-    {% endblock %}
-    </main>
+
+<nav class="main-nav">
+    <a href="./" class="main-nav__item">Home</a>    
+    <a href="./about.html" class="main-nav__item">About</a>    
+</nav>
+{% block main %}
+
+{% endblock %}
     
 <div id="overlay"></div>
-
-
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>

@@ -6,7 +6,7 @@
 {% endmacro %}
 
 <div class="branding">
-  <img class="branding__logo" src="img/worldbank-logo.png" alt="">
+  <img class="branding__logo" src="img/open-government-logo.svg" alt="">
   <h1 class="branding__title">The Impact of Open Government</h1>
   <h2 class="branding__tagline">Mapping the landscape</h2>
   <h3 class="branding__status">Alpha Version</h3>
@@ -78,7 +78,7 @@
       <td class="col-4" title="{{d.country}}">{{d.country}}</td>
 
       {% if d.ongoing %}
-      <td colspan="17" class="regular-item__ongoing"><a href="{{d.url}}" title="Go to this project">This is an ongoing project</a></td>
+      <td colspan="17" class="regular-item__ongoing"><a href="{{d.url}}" title="Go to this project" target="_blank">This is an ongoing project</a></td>
 
       {% else %}
       <td class="links cat-transparency">{% if d.transparency.increased_knowledge %} {{yes()}} {% endif %}</td>
