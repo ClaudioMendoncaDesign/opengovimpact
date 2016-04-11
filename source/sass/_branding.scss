@@ -107,7 +107,9 @@
 // ====================================================
 
 
-.inter-header--final { text-align: center; }
+.inter-header--final { 
+  td { padding: 20px;}
+}
 
 .byline {
   display: inline-block;
