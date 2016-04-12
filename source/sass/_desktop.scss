@@ -44,7 +44,7 @@ th {
 .table-scroll {
   height: 70vh;
   overflow: scroll;
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
 }
 
 
@@ -77,7 +77,7 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
 
 .inactive-cell { 
   background-color: rgba(white, .5); 
-  width: 5%;
+  width: 7%;
 }
 
 
@@ -192,13 +192,13 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
     > div {
       transform: 
         // Magic Numbers
-        translate(22px, 5px)
+        translate(33px, 5px)
         // 45 is really 360-45
         rotate(315deg);
       width: 30px;
     }
     > div > span {
-      padding: 9px 0 8px 0;
+      padding: 13px 0 11px 0;
       width: 350px;
       display: inline-block;
       position: relative;
@@ -210,9 +210,9 @@ tr:nth-child(2n) { background-color: rgba($black, .05); }
         border-style: solid;
         border-color: transparent;
         position: absolute;
-        border-width: 0 31px 31px 31px;
+        border-width: 0 40px 40px 40px;
         top: 0px;
-        left: -62px;
+        left: -80px;
       }
     }
   }
