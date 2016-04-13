@@ -86,7 +86,7 @@
       color: white; }
 
 .inter-header--final td {
-  padding: 20px; }
+  padding: 10px; }
 
 .byline {
   display: inline-block;
@@ -222,9 +222,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw; }
-  @media (min-width: 64em) {
-    body {
-      overflow: hidden; } }
 
 table {
   border-collapse: collapse;
@@ -246,10 +243,15 @@ th {
   text-align: center;
   width: 45px !important; }
 
+.homepage {
+  height: 96.4vh; }
+  @media (min-width: 64em) {
+    .homepage {
+      overflow: hidden; } }
+
 .table-scroll {
-  height: 70vh;
-  overflow: scroll;
-  padding-bottom: 50px; }
+  height: 68vh;
+  overflow: scroll; }
 
 .table-body__width-setter td {
   height: 0;
@@ -274,7 +276,7 @@ tr:nth-child(2n) {
 
 .inactive-cell {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 5%; }
+  width: 7%; }
 
 .inter-header {
   font-weight: bold;
@@ -339,10 +341,10 @@ tr:nth-child(2n) {
   height: 200px;
   white-space: nowrap; }
   .table-header-rotated .rotate > div {
-    transform: translate(22px, 5px) rotate(315deg);
+    transform: translate(33px, 5px) rotate(315deg);
     width: 30px; }
   .table-header-rotated .rotate > div > span {
-    padding: 9px 0 8px 0;
+    padding: 13px 0 11px 0;
     width: 350px;
     display: inline-block;
     position: relative; }
@@ -353,9 +355,9 @@ tr:nth-child(2n) {
       border-style: solid;
       border-color: transparent;
       position: absolute;
-      border-width: 0 31px 31px 31px;
+      border-width: 0 40px 40px 40px;
       top: 0px;
-      left: -62px; }
+      left: -80px; }
 
 .links.cat-transparency {
   background-color: rgba(200, 100, 0, 0.1); }
@@ -501,8 +503,10 @@ tr:nth-child(2n) {
   margin: 0 auto;
   max-width: 960px; }
   .about-page__content {
-    max-width: 650px;
-    display: inline-block; }
+    max-width: 560px;
+    display: inline-block;
+    margin-left: 62px;
+    margin-right: 30px; }
   .about-page__partners {
     max-width: 180px;
     padding: 0 40px;
@@ -516,3 +520,44 @@ tr:nth-child(2n) {
         max-width: 50%; }
   .about-page p {
     font-size: .9rem; }
+
+.submit-page {
+  padding: 42px 20px;
+  margin: 0 auto;
+  max-width: 560px;
+  font-size: .9rem; }
+  .submit-page h1,
+  .submit-page h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .submit-page h2 {
+    font-size: 1rem; }
+
+.form ul {
+  padding: 0;
+  margin: 0; }
+
+.form li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.form .required-message {
+  display: none; }
+
+.form label {
+  display: block;
+  padding: 5px 0; }
+
+.form input[type="text"] {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1.1rem; }
+
+.form input[type="checkbox"] {
+  margin-right: 10px; }
+
+.form input[type="submit"] {
+  margin-top: 30px; }
