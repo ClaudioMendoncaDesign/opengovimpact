@@ -20,33 +20,36 @@
     <td class="col-2" title="Organization">Organization</td>
     <td class="col-3" title="Primary Metdodology">Methodology</td>
     <td class="col-4" title="Countries">Countries</td>
-    <td class="rotate cat-transparency" title="Increased knowledge of rights"><div><span>Increased knowledge of rights</span></div></td>
-    <td class="rotate cat-transparency" title="Transparency"><div><span>Transparency</span></div></td>
-    <td class="rotate cat-transparency" title="Budget Transparency"><div><span>Budget transparency</span></div></td>
+
+    <td class="rotate cat-transparency" title="Fiscal and budget transparency"><div><span>Fiscal and budget transparency</span></div></td>
+    
     <td class="rotate cat-citizen-engagement" title="Voter turnout"><div><span>Voter turnout</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Evidence-based electoral decisionmaking"><div><span>Evidence-based electoral decisionmaking</span></div></td>
     <td class="rotate cat-citizen-engagement" title="Enhanced engagement otder tdan voting"><div><span>Enhanced engagement other than voting</span></div></td>
-    <td class="rotate cat-responsiveness" title="Answerability"><div><span class="">Answerability</span></div></td>
-    <td class="rotate cat-responsiveness" title="More inclusive decision-making"><div><span class="">More inclusive decision-making</span></div></td>
-    <td class="rotate cat-accountability" title="Hiring and firing"><div><span class="">Hiring and firing</span></div></td>
-    <td class="rotate cat-accountability" title="Equitable service delivery"><div><span class="">Equitable service delivery</span></div></td>
-    <td class="rotate cat-accountability" title="Improved Public Services"><div><span class="">Improved Public Services</span></div></td>
+    
+    <td class="rotate cat-responsiveness" title="Answerability to Public Inquiries"><div><span class="">Answerability to Public Inquiries</span></div></td>
+    <td class="rotate cat-responsiveness" title="More inclusive decision-making processes"><div><span class="">More inclusive decision-making processes</span></div></td>
+    
+    <td class="rotate cat-accountability" title="Hiring and firing of civil servants"><div><span class="">Hiring and firing of civil servants</span></div></td>
+    <td class="rotate cat-accountability" title="Increased equity in service delivery"><div><span class="">Increased equity in service delivery</span></div></td>
+    <td class="rotate cat-accountability" title="Increased quality in service delivery"><div><span class="">Increased quality in service delivery</span></div></td>
     <td class="rotate cat-accountability" title="Reduced corruption"><div><span class="">Reduced corruption</span></div></td>
     <td class="rotate cat-accountability" title="Otder local gov't and service provider accountability"><div><span class="">Otder local gov't and service provider accountability</span></div></td>
-    <td class="rotate cat-social-economic-change" title="Increased efficiency of government"><div><span class="">Increased efficiency of government</span></div></td>
+    
     <td class="rotate cat-social-economic-change" title="Improved Healtd Outcomes"><div><span class="">Improved Health Outcomes</span></div></td>
-    <td class="rotate cat-social-economic-change" title="Regulatory compliance"><div><span class="">Regulatory compliance</span></div></td>
-    <td class="rotate cat-social-economic-change" title="Trust in government"><div><span class="">Trust in government</span></div></td>
+    <td class="rotate cat-social-economic-change" title="Better regulatory compliance"><div><span class="">Better regulatory compliance</span></div></td>
+    <td class="rotate cat-social-economic-change" title="Enhanced trust in government"><div><span class="">Enhanced trust in government</span></div></td>
+    
     <td class="inactive-cell"></td>
   </tr>
   <tr class="table-categories">
       <th title="Open Government Outcomes and Impact" class="cat-info" colspan="4">Types of Open Government Outcomes and Impact Examined</th>
-      <th title="Transparency" class="cat-transparency" colspan="3">Transparency</th>
+      <th title="Transparency" class="cat-transparency" colspan="1">Transparency</th>
       <th title="Citizen Engagement and Participation" class="cat-citizen-engagement" colspan="3">Citizen Engagement and Participation</th>
       <th title="Responsiveness" class="cat-responsiveness" colspan="2">Responsiveness</th>
       <th title="Accountability" class="cat-accountability" colspan="5">Accountability</th>
-      <th title="Social, Economic, Environmental change" class="cat-social-economic-change" colspan="4">Social, Economic, Environmental change</th>
-      <th class="inactive-cell"></th>
+      <th title="Social, Economic, Environmental change" class="cat-social-economic-change" colspan="3">Social, Economic, Environmental change</th>
+      <th class="inactive-cell">&nbsp;</th>
     </tr>
 </table>
 
@@ -58,7 +61,7 @@
       <td class="col-2"></td>
       <td class="col-3"></td>
       <td class="col-4"></td>
-      <td colspan="17"></td>
+      <td colspan="14"></td>
       <td class="inactive-cell"></td>
     </tr>
   </thead>
@@ -66,7 +69,7 @@
 
     {% if d.intertitle %}
     <tr class="inter-header">
-      <td colspan="22">{{d.intertitle}}</td>
+      <td colspan="19">{{d.intertitle}}</td>
     </tr>
 
     {% else %}
@@ -78,12 +81,10 @@
       <td class="col-4" title="{{d.country}}">{{d.country}}</td>
 
       {% if d.ongoing %}
-      <td colspan="17" class="regular-item__ongoing"><a href="{{d.url}}" title="Go to this project" target="_blank">This is an ongoing project</a></td>
+      <td colspan="14" class="regular-item__ongoing"><a href="{{d.url}}" title="Go to this project" target="_blank">This is an ongoing project</a></td>
 
       {% else %}
-      <td class="links cat-transparency">{% if d.transparency.increased_knowledge %} {{yes()}} {% endif %}</td>
-      <td class="links cat-transparency">{% if d.transparency.transparency %} {{yes()}} {% endif %}</td>
-      <td class="links cat-transparency">{% if d.transparency.budget %} {{yes()}} {% endif %}</td>
+      <td class="links cat-transparency">{% if d.transparency.fiscal_transparency %} {{yes()}} {% endif %}</td>
       <td class="links cat-citizen-engagement">{% if d.citizen_engagement.voter_turnout %} {{yes()}} {% endif %}</td>
       <td class="links cat-citizen-engagement">{% if d.citizen_engagement.evidence_based %} {{yes()}} {% endif %}</td>
       <td class="links cat-citizen-engagement">{% if d.citizen_engagement.enhanced_engagement %} {{yes()}} {% endif %}</td>
@@ -94,7 +95,6 @@
       <td class="links cat-accountability">{% if d.accountability.improved_services %} {{yes()}} {% endif %}</td>
       <td class="links cat-accountability">{% if d.accountability.reduced_corruption %} {{yes()}} {% endif %}</td>
       <td class="links cat-accountability">{% if d.accountability.other %} {{yes()}} {% endif %}</td>
-      <td class="links cat-social-economic-change">{% if d.social_economic_change.increased_efficiency %} {{yes()}} {% endif %}</td>
       <td class="links cat-social-economic-change">{% if d.social_economic_change.improved_health %} {{yes()}} {% endif %}</td>
       <td class="links cat-social-economic-change">{% if d.social_economic_change.compliance %} {{yes()}} {% endif %}</td>
       <td class="links cat-social-economic-change">{% if d.social_economic_change.trust_gov %} {{yes()}} {% endif %}</td>
@@ -107,7 +107,7 @@
   {% endfor %}
   
     <tr class="inter-header--final">
-      <td colspan="22">&nbsp;</td>
+      <td colspan="19">&nbsp;</td>
     </tr>    
 
   </table>

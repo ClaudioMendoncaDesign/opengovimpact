@@ -9,7 +9,25 @@
   "country": "Uganda",
   "category": "community-based-transparency",
   "url": "http://egap.org/content/meet-candidates-information-and-accountability-primary-and-general-elections-0",
-  "citizen_engagement": { "voter_turnout": true, "evidence_based": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": true,
+    "evidence_based": true,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -19,8 +37,25 @@
   "country": "Benin",
   "category": "community-based-transparency",
   "url": "http://egap.org/content/can-common-knowledge-improve-common-goods",
-  "citizen_engagement": { "evidence_based": true },
-  "accountability": { "hiring_firing": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": true,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": true,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -30,10 +65,25 @@
   "country": "India",
   "category": "community-based-transparency",
   "url": "https://www.povertyactionlab.org/evaluation/empowering-female-leaders-and-voters-rajasthan-india",
-  "transparency": { "increased_knowledge": true },
-  "citizen_engagement": { "voter_turnout": true, "evidence_based": true },
-  "responsiveness": { "inclusive_decisionmaking": true },
-  "accountability": { "other": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": true,
+    "evidence_based": true,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": true },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -43,8 +93,25 @@
   "country": "Uganda",
   "category": "community-based-transparency",
   "url": "http://www.poverty-action.org/study/budget-transparency-and-political-oversight-uganda",
-  "transparency": { "increased_knowledge": true },
-  "citizen_engagement": { "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -54,7 +121,25 @@
   "country": "Mexico",
   "category": "community-based-transparency",
   "url": "https://www.globalintegrity.org/2015/11/tracking-my-taxes-follow-the-money-treasure-hunts-and-next-steps/",
-  "citizen_engagement": { "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -64,7 +149,25 @@
   "country": "",
   "category": "community-based-transparency",
   "url": "http://egap.org/content/can-common-knowledge-improve-common-goods",
-  "accountability": { "service_delivery": true, "reduced_corruption": true, "other": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": true,
+    "improved_services": false,
+    "reduced_corruption": true,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {"intertitle": "Transparency Interventions: ICT-based information provision"},
@@ -76,9 +179,25 @@
   "country": "Brazil",
   "category": "ict-based-transparency",
   "url": "http://odimpact.org/case-brazils-open-budget-transparency-portal.html",
-  "transparency": { "transparency": true },
-  "citizen_engagement": { "enhanced_engagement": true },
-  "accountability": { "hiring_firing": true, "reduced_corruption": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": true,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": true,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -88,7 +207,25 @@
   "country": "Kenya",
   "category": "ict-based-transparency",
   "url": "http://www.mitgovlab.org/projects/online-civic-engagement",
-  "citizen_engagement": { "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -98,7 +235,25 @@
   "country": "Uganda",
   "category": "ict-based-transparency",
   "url": "http://egap.org/content/repairing-information-underload",
-  "citizen_engagement": { "evidence_based": true, "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": true,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -108,7 +263,25 @@
   "country": "Various",
   "category": "ict-based-transparency",
   "url": "http://www.cgdev.org/publication/publish-what-you-buy-case-routine-publication-government-contracts",
-  "social_economic_change": { "increased_efficiency": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -118,18 +291,53 @@
   "country": "Indonesia",
   "category": "ict-based-transparency",
   "url": "http://odimpact.org/case-indonesias-kawal-pemilu.html",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "social_economic_change": { "trust_gov": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": true }
 },
 
 {
   "intervention": "Open Data",
   "organization": "NYU GovLab",
   "methodology": "Action Research",
-  "country": ["US", "Australia", "Mexico", "Italy", "South Korea"],
+  "country": "US, Australia, Mexico, Italy, South Korea",
   "category": "ict-based-transparency",
   "url": "http://www.opendata500.com/us/about/",
-  "social_economic_change": { "trust_gov": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": true }
 },
 
 {
@@ -139,7 +347,25 @@
   "country": "Various",
   "category": "ict-based-transparency",
   "url": "http://www.opening-governance.org/lines-of-inquiry",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -149,24 +375,55 @@
   "country": "Various",
   "category": "ict-based-transparency",
   "url": "http://www.opendataresearch.org/project/2013/oddc",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
-{
-  "intertitle": "Citizen Engagement and Participation Interventions: Community-based mobilization and monitoring, primarily low tech"
-},
+{"intertitle": "Citizen Engagement and Participation Interventions: Community-based mobilization and monitoring, primarily low tech" },
 
 {
   "intervention": "Community Score Cards, Interface Meeting, Action Planning",
   "organization": "R4D",
   "methodology": "RCT, surveys, interviews",
-  "country": ["Indonesia", "Tanzania"],
-  "category": "community-based-participation",
+  "country": "Indonesia, Tanzania",
+  "category": "ict-based-transparency",
   "url": "http://t4dproject.org/sites/default/files/file-uploads/T4D one pager - December 2015_0.pdf",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "answerability": true },
-  "accountability": { "improved_services": true },
-  "social_economic_change": { "improved_health": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": true,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true,
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": true,
+    "compliance": false,
+    "trust_gov": false }
 },
 
 {
@@ -174,318 +431,870 @@
   "organization": "EGAP",
   "methodology": "RCT",
   "country": "Uganda",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://egap.org/content/meet-candidates-information-and-accountability-primary-and-general-elections-0",
-  "citizen_engagement": { "evidence_based": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": true,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Community Scorecards in health centers (Bjorkman/Svensson replication)",
   "organization": "IPA/3ie/GOAL",
   "methodology": "RCT",
   "country": "Uganda",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://www.3ieimpact.org/media/filer_public/2014/05/09/donato_revised_replication_plan.pdf",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "other": true },
-  "social_economic_change": { "improved_health": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": true,
+    "compliance": false,
+    "trust_gov": false }
 },
-{
-  "intervention": "Community driven development",
-  "organization": "IPA",
-  "methodology": "RCT",
-  "country": "Philippines",
-  "category": "community-based-participation",
-  "url": "http://www.poverty-action.org/study/community-driven-development-philippines",
-  "accountability": { "improved_services": true }
-},
-{
-  "intervention": "Civic engagement skills (Bangladesh)",
-  "organization": "MIT/GPSA",
-  "methodology": "RCT",
-  "country": "Bangladesh",
-  "category": "community-based-participation",
-  "url": "http://www.mitgovlab.org/projects/womens-participation-and-local-governance/",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "inclusive_decisionmaking": true },
-  "accountability": { "service_delivery": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "other": true },
-  "social_economic_change": { "compliance": true }
-},
-{
-  "intervention": "Civic engagement skills (Philippines)",
-  "organization": "MIT",
-  "methodology": "RCT",
-  "country": "Philippines",
-  "category": "community-based-participation",
-  "url": "http://www.mitgovlab.org/projects/representation-or-cooptation/",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "inclusive_decisionmaking": true },
-  "accountability": { "service_delivery": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "other": true }
-},
-{
-  "intervention": "Public participation in fiscal monitoring",
-  "organization": "GIFT",
-  "methodology": "Mixed methods",
-  "country": "Various",
-  "category": "community-based-participation",
-  "url": "http://www.fiscaltransparency.net/Workplan.pdf",
-  "transparency": { "budget": true }
-},
-{
-  "intervention": "Public participation in regulation creation",
-  "organization": "J-PAL",
-  "methodology": "RCT",
-  "country": "Vietnam",
-  "category": "community-based-participation",
-  "url": "https://www.povertyactionlab.org/evaluation/participatory-and-regulatory-compliance-vietnam",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "social_economic_change": { "compliance": true }
-},
-{
-  "intervention": "Social audit of traditional leaders",
-  "organization": "EGAP",
-  "methodology": "RCT",
-  "country": "",
-  "category": "community-based-participation",
-  "url": "http://egap.org/content/accountability-among-traditional-leaders-pilot-experiment-monitoring-and-leakage-malawi",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "accountability": { "hiring_firing": true },
-  "accountability": { "reduced_corruption": true },
-  "accountability": { "other": true }
-},
+
 {
   "intervention": "Community monitoring of traditional leaders",
   "organization": "EGAP",
   "methodology": "RCT",
   "country": "Malawi",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://egap.org/content/accountability-among-traditional-leaders-pilot-experiment-monitoring-and-leakage-malawi",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
+{
+  "intervention": "Community driven development",
+  "organization": "IPA",
+  "methodology": "RCT",
+  "country": "Philippines",
+  "category": "ict-based-transparency", 
+  "url": "http://www.poverty-action.org/study/community-driven-development-philippines",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
+
+{
+  "intervention": "Civic engagement skills (Bangladesh)",
+  "organization": "MIT/GPSA",
+  "methodology": "RCT",
+  "country": "Bangladesh",
+  "category": "ict-based-transparency", 
+  "url": "http://www.mitgovlab.org/projects/womens-participation-and-local-governance/",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": true },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": true,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
+
+{
+  "intervention": "Civic engagement skills (Philippines)",
+  "organization": "MIT",
+  "methodology": "RCT",
+  "country": "Philippines",
+  "category": "ict-based-transparency", 
+  "url": "http://www.mitgovlab.org/projects/representation-or-cooptation/",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": true },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": true,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
+
+{
+  "intervention": "Public participation in fiscal monitoring",
+  "organization": "Gift",
+  "methodology": "Mixed Methods",
+  "country": "Various",
+  "category": "ict-based-transparency", 
+  "url": "http://www.fiscaltransparency.net/Workplan.pdf",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
+
+{
+  "intervention": "Public participation in regulation creation",
+  "organization": "J-PAL",
+  "methodology": "RCT",
+  "country": "Vietnam",
+  "category": "ict-based-transparency", 
+  "url": "https://www.povertyactionlab.org/evaluation/participatory-and-regulatory-compliance-vietnam",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": true,
+    "trust_gov": false }
+},
+
 {
   "intervention": "Civic Engagement",
   "organization": "MAVC",
-  "methodology": "Mixed methods",
+  "methodology": "Mixed Methods",
   "country": "Various",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://www.makingallvoicescount.org/wp-content/uploads/2015/08/RE-strategy.pdf",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Vertical integration of social accountability mechanisms",
   "organization": "AU ARC",
-  "methodology": "Action research",
+  "methodology": "Action Research",
   "country": "Various",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
-  "intervention": "Mix of empowerment and accountability interventions",
+  "intervention": "Mix of empwoerment and accountability interventions",
   "organization": "IDS",
-  "methodology": "Mixed methods",
+  "methodology": "Mixed Methods",
   "country": "4-6 countries including fragile contexts",
-  "category": "community-based-participation",
+  "category": "ict-based-transparency", 
   "url": "https://www.devex.com/projects/tenders/empowerment-accountability-e-a-research-programme/181097",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
 
+{
+  "intervention": "Social audit of traditional leaders",
+  "organization": "EGAP",
+  "methodology": "RCT",
+  "country": "",
+  "category": "ict-based-transparency", 
+  "url": "http://egap.org/content/accountability-among-traditional-leaders-pilot-experiment-monitoring-and-leakage-malawi",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": true,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": true,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
 
-{ "intertitle": "Citizen Engagement and Participation Interventions: primarily ICT-based mobilization and monitoring" },
+{"intertitle": "Citizen Engagement and Participation Interventions: primarily ICT-based mobilization and monitoring" },
 
 {
   "intervention": "SMS encouragement to vote",
   "organization": "J-PAL",
   "methodology": "RCT",
   "country": "India",
-  "category": "ict-based-participation",
+  "category": "ict-based-transparency", 
   "url": "https://www.povertyactionlab.org/GI/Evaluations#sixth",
-  "citizen_engagement": { "evidence_based": true },
-  "citizen_engagement": { "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": true,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Citizen-driven ICT complaints mechanism",
   "organization": "MIT",
-  "methodology": "Mixed methods",
+  "methodology": "Mixed Methods",
   "country": "Guatemala",
-  "category": "ict-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://www.mitgovlab.org/projects/ICT-Health",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "answerability": true },
-  "accountability": { "service_delivery": true },
-  "accountability": { "improved_services": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": true ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": true,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "ICT townhalls",
   "organization": "MIT",
   "methodology": "Quantitative",
-  "country": "USA",
-  "category": "ict-based-participation",
-  "url": "http://www.mitgovlab.org/projects/democracy-online/",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "inclusive_decisionmaking": true }
+  "country": "http://www.mitgovlab.org/projects/democracy-online/",
+  "category": "ict-based-transparency", 
+  "url": "USA",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": true },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Parliamentary monitoring, publication, and engagement via Facebook for youth",
   "organization": "MIT/mySociety",
   "methodology": "RCT",
   "country": "Kenya",
-  "category": "ict-based-participation",
-  "url": "http://www.mitgovlab.org/projects/online-civic-engagement",
-  "transparency": { "transparency": true }
+  "category": "ict-based-transparency", 
+  "url": "",
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "ICT monitoring of solid waste collection",
   "organization": "EGAP",
   "methodology": "RCT",
   "country": "Uganda",
-  "category": "ict-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://egap.org/registration/1589",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "other": true }
-},  
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
+},
+
 {
   "intervention": "Online complaints mechanism",
   "organization": "mySociety",
   "methodology": "Quantitative data",
   "country": "Various",
-  "category": "ict-based-participation",
+  "category": "ict-based-transparency", 
   "url": "https://www.mysociety.org/research/research-in-progress/",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "inclusive_decisionmaking": true },
-  "accountability": { "service_delivery": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "other": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": true },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": true,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": true },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Civic tech",
   "organization": "MAVC",
   "methodology": "Mixed methods",
   "country": "Various",
-  "category": "ict-based-participation",
+  "category": "ict-based-transparency", 
   "url": "http://www.makingallvoicescount.org/wp-content/uploads/2015/08/RE-strategy.pdf",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
-{
-  "intertitle": "Responsiveness/legal reform interventions (teeth)"
-},
+
+{"intertitle": "Responsiveness/legal reform interventions ('teeth')" },
+
 {
   "intervention": "FOI Law",
   "organization": "EGAP",
   "methodology": "RCT",
   "country": "UK",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "http://egap.org/registration-details/764",
-  "transparency": { "transparency": true },
-  "responsiveness": { "answerability": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": true ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "FOI Law",
-  "organization": "MIT/mySociety",
+  "organization": "MIT/MySociety",
   "methodology": "RCT",
   "country": "Uruguay",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "http://www.mitgovlab.org/projects/interaction-and-attitudes/",
-  "citizen_engagement": { "enhanced_engagement": true },
-  "responsiveness": { "answerability": true },
-  "social_economic_change": { "trust_gov": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": true ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": true }
 },
+
 {
   "intervention": "FOI Law",
   "organization": "Carter Center",
-  "methodology": "Mixed methods",
-  "country": ["Liberia", "Guatemala"],
-  "category": "legal-reform",
+  "methodology": "Mixed Methods",
+  "country": "Liberia, Guatemala",
+  "category": "ict-based-transparency", 
   "url": "http://www.cartercenter.org/peace/ati/women/women-access-to-information.html",
-  "citizen_engagement": { "enhanced_engagement": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": true },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Land registries",
   "organization": "ISS",
   "methodology": "Case studies",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "",
-  "transparency": { "transparency": true },
-  "accountability": { "improved_services": true },
-  "accountability": { "reduced_corruption": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true, 
+    "reduced_corruption": true,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Anti-corruption law and strategy",
   "organization": "ISS",
   "methodology": "Case studies",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "",
-  "accountability": { "reduced_corruption": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": true,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Mix of public sector reforms focused on open govenrment",
   "organization": "ESID",
-  "methodology": "Mixed methods",
-  "country": ["Ghana", "Malawi", "Rwanda", "Uganda"],
-  "category": "legal-reform",
+  "methodology": "Mixed Methods",
+  "country": "Ghana, Malawi, Rwanda and Uganda",
+  "category": "ict-based-transparency", 
   "url": "",
-  "accountability": { "reduced_corruption": true },
-  "social_economic_change": { "trust_gov": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": false },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": true,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "OGP reforms related to fiscal transparency",
   "organization": "GIFT",
-  "methodology": "Mixed methods",
+  "methodology": "Mixed Methods",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "http://www.fiscaltransparency.net/Workplan.pdf",
-  "transparency": { "transparency": true }
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "OGP reforms",
   "organization": "OGP",
   "methodology": "Case studies",
-  "country": ["Costa Rica", "Albania", "Mexico", "Philippines"],
-  "category": "legal-reform",
+  "country": "Costa Rica, Albania, Mexico, Philippines",
+  "category": "ict-based-transparency", 
   "url": "http://www.opengovpartnership.org/topics?f%5B0%5D=type%3Acase_study",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "OGP reforms",
   "organization": "OGP/Brookings",
   "methodology": "Literature review",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "",
-  "ongoing": true
+  "ongoing": false,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": true, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "OGP reforms",
   "organization": "Global Integrity",
   "methodology": "Case studies",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "https://www.globalintegrity.org/2015/10/lever-of-change-learning-to-make-ogp-effective-at-the-country-level/",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "Focus on the reformer",
   "organization": "ISS",
   "methodology": "Case studies",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 },
+
 {
   "intervention": "SDG-related governance reforms",
   "organization": "3ie",
   "methodology": "RCT",
   "country": "Various",
-  "category": "legal-reform",
+  "category": "ict-based-transparency", 
   "url": "http://www.3ieimpact.org/media/filer_public/2015/12/02/dpw1-eoi.pdf",
-  "ongoing": true
+  "ongoing": true,
+  "transparency": { "fiscal_transparency": true },
+  "citizen_engagement": {
+    "voter_turnout": false,
+    "evidence_based": false,
+    "enhanced_engagement": false },
+  "responsiveness": {
+    "answerability": false ,
+    "inclusive_decisionmaking": false },
+  "accountability": { 
+    "hiring_firing": false,
+    "service_delivery": false,
+    "improved_services": false, 
+    "reduced_corruption": false,
+    "other": false },
+  "social_economic_change": {
+    "improved_health": false,
+    "compliance": false,
+    "trust_gov": false }
 }
 ]}
