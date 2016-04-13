@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  @include breakpoint($large) {overflow: hidden;}
 }
 
 table {
@@ -37,12 +36,17 @@ th {
   width: 45px !important;
 }
 
+.homepage {
+  height: 96.4vh;
+  @include breakpoint($large) { overflow: hidden; }
+}
+
 // ====================================================
 // Creates the scrollable section of the table
 // ====================================================
 
 .table-scroll {
-  height: 70vh;
+  height: 68vh;
   overflow: scroll;
   // padding-bottom: 50px;
 }
