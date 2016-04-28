@@ -117,12 +117,12 @@
 {
   "intervention": "Information on resource allocations",
   "organization": "Global Integrity",
-  "methodology": "Participatory assessment, policy mapping",
+  "methodology": "Participatory assessment, action research",
   "country": "Mexico",
   "category": "community-based-transparency",
   "url": "https://www.globalintegrity.org/2015/11/tracking-my-taxes-follow-the-money-treasure-hunts-and-next-steps/",
   "ongoing": false,
-  "transparency": { "fiscal_transparency": false },
+  "transparency": { "fiscal_transparency": true },
   "citizen_engagement": {
     "voter_turnout": false,
     "evidence_based": false,
@@ -1221,15 +1221,15 @@
   "country": "Various",
   "category": "ict-based-transparency", 
   "url": "https://www.globalintegrity.org/2015/10/lever-of-change-learning-to-make-ogp-effective-at-the-country-level/",
-  "ongoing": true,
+  "ongoing": false,
   "transparency": { "fiscal_transparency": true },
   "citizen_engagement": {
     "voter_turnout": false,
     "evidence_based": false,
-    "enhanced_engagement": false },
+    "enhanced_engagement": true },
   "responsiveness": {
-    "answerability": false ,
-    "inclusive_decisionmaking": false },
+    "answerability": true ,
+    "inclusive_decisionmaking": true },
   "accountability": { 
     "hiring_firing": false,
     "service_delivery": false,
